@@ -5,8 +5,138 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+
+
+    <!-- 웹폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!--css-->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+    <!-- 파비콘 -->
+    <!-- <link rel="shortcut icon" href="assets/icons/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="assets/icons/favicon_72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="96x96" href="assets/icons/favicon_96.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/icons/favicon_144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="192x192" href="assets/icons/favicon_192.png" /> -->
+    
+    <!-- 페이스북 메타 태그 -->
+    <!-- <meta property="og:title" content="메가박스 사이트 만들기" />
+    <meta property="og:url" content="https://github.com/webstoryboy/megabox2019" />
+    <meta property="og:image" content="https://webstoryboy.github.io/megabox2019/mega.jpg" />
+    <meta property="og:description" content="메가박스 사이트 따라하면서 배우는 튜토리얼입니다." /> -->
+   
+    <!-- 트위터 메타 태그 -->
+    <!-- <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="메가박스 사이트 만들기">
+    <meta name="twitter:url" content="https://github.com/webstoryboy/megabox2019/">
+    <meta name="twitter:image" content="https://webstoryboy.github.io/megabox2019/mega.jpg">
+    <meta name="twitter:description" content="메가박스 사이트 따라하면서 배우는 튜토리얼입니다."> -->
+
+
 </head>
 <body>
-    <div>반영</div>
+
+    <!--header-->
+    <nav class="nav">
+        <div class="container">
+            <ul>
+                <li class="on"><a href="#section1">Home</a></li>
+                <li class=""><a href="#about">About</a></li>
+                <li><a href="#work-web">Portfolio(web)</a></li>
+                <li><a href="#work-des">Portfolio(design)</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--//header-->
+
+    <section id="section1">
+        <div class="video_wrap">
+            <video width="100%" height="969px" autoplay="" muted="" loop="">
+                <source src="assets/video/Clouds - 64767.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="text_wrap">
+            <p>WEB PUBLISHER & FRONTEND PORTFOLIO</p>
+            <h1 id="typing">
+            </h1>
+        </div>
+    </section>
+
+    <section id="section2" class="section">
+        <div class="container">
+            <h1>ABOUT ME</h1>
+
+            <div class="profile">
+                <div class="my_img">
+                    <div class="img">
+                        <img src="/assets/img/1804E3494EFD3EE015.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="half-highlight name">Baek Eun Ji</p>
+                        <span>1992.10.21</span>
+                        <span>qordmswl5631@naver.com</span>
+                    </div>
+                </div>
+
+                <div class="skill">
+
+                    <p class="half-highlight name">Skill</p>
+                    <p>웹 표준, 웹접근성을 고려하여 적절한 코드를 사용하고 다양한 종류와 버전의 브라우저에 맞게 마크업합니다.
+                    </p>
+
+                    <p>다양한 디자인 업무 경험을 통해 ui/ux에 대한 이해도와 구상력이 높으며 front end developer 준비를 통해 api와 백엔드에 대한 지식을 보유하고 있습니다.
+                    </p>
+
+                    <div class="skill_graph">
+                        <article class="skills">
+                            <div class="t-6">
+                                <p>HTML5<span></span><span class="skills"></span></p>
+                            </div>
+                        </article>
+                    </div>
+                
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="section3" class="section">
+
+        <div class="container">
+            <h1>Portfolio
+                <br/>
+                (web)
+            </h1>
+            <p>HTML, CSS, JS를 활용한 웹 포트폴리오</p>
+        </div>
+    </section>
+
+
+
+    <script>
+        var string = "Discover Think Create";
+        var str = string.split("");
+        var el = document.getElementById('typing');
+        (function animate() {
+        str.length > 0 ? el.innerHTML += str.shift() : clearTimeout(running); 
+        var running = setTimeout(animate, 90);
+        })();
+
+    </script>
+
+
 </body>
 </html>
