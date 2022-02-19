@@ -46,6 +46,9 @@
 </head>
 <body>
 
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
     <!--header-->
     <nav class="nav">
         <div class="container">
@@ -68,8 +71,8 @@
         </div>
         <div class="text_wrap">
             <p>WEB PUBLISHER & FRONTEND PORTFOLIO</p>
-            <h1 id="typing">
-            </h1>
+            <h2 id="typing" class="mouseCont">
+            </h2>
         </div>
     </section>
 
@@ -78,33 +81,415 @@
             <h1>ABOUT ME</h1>
 
             <div class="profile">
+
+                <!--프로필 이미지-->
                 <div class="my_img">
                     <div class="img">
                         <img src="/assets/img/1804E3494EFD3EE015.jpg" alt="">
                     </div>
-                    <div class="content">
-                        <p class="half-highlight name">Baek Eun Ji</p>
-                        <span>1992.10.21</span>
-                        <span>qordmswl5631@naver.com</span>
+                </div>
+                <!--//프로필 이미지-->
+
+                <div class="content">
+                    <div class="top">
+                        <div class="profile_cnt">
+                            <h6>PROFILE</h6>
+    
+                            <ul>
+                                <li>
+                                    <strong>NAME</strong>
+                                    <span>백은지</span>
+                                </li>
+    
+                                <li>
+                                    <strong>ages</strong>
+                                    <span>1992.10.21</span>
+                                </li>
+    
+                                <li>
+                                    <strong>address</strong>
+                                    <span>서울특별시 관악구 봉천동</span>
+                                </li>
+    
+                                <li>
+                                    <strong>e-mail</strong>
+                                    <span>qordmswl5631@naver.com</span>
+                                </li>
+    
+                            </ul>
+                        </div>
+
+                        <div class="profile_cnt">
+                            <h6>education</h6>
+
+                            <ul>
+                                <li>
+                                    <strong>20.12 ~ 21.03</strong>
+                                    <span>프론트엔드개발자 과정 수료  (코리아 IT 아카데미)</span>
+                                </li>
+                                <li>
+                                    <strong>20.06 ~ 20.08</strong>
+                                    <span>취업준비를 위한 포트폴리오 스터디</span>
+                                </li>
+                                <li>
+                                    <strong>19.11 ~ 20.03</strong>
+                                    <span>웹퍼블리셔과정 (html css + 제이쿼리) </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bottom">
+                        <div class="profile_cnt">
+                            <h6>experiences</h6>
+
+                            <ul>
+                                <li>
+                                    <strong>20.09 ~</strong>
+                                    <span>
+                                        케이옥션 퍼블리셔 & 프론트엔드 개발자 근무
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <strong>18.09 ~ 19.07</strong>
+                                    <span>
+                                        어빌리지 커피머신 디자이너 (오픈마켓 관리 및 홍보디자인) 근무
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <strong>17.06 ~ 18.01</strong>
+                                    <span>
+                                        다온에프비 디자이너 (프랜차이즈 브랜드 디자인) 근무
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <strong>18.05 ~ 18.11</strong>
+                                    <span>
+                                        신기코리아, 오버파워트레이드 디자인 프리랜서
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="skills">
+
+                <div>
+                    <p class="tit half-highlight">Publishing & Frontend Develope</p>
+
+                    <div class="skill_wrap">
+
+                        <div class="list">
+                            <div class="img">
+                                <img src="./assets/img/skill/html_img.png" alt="skill image">
+                            </div>
+                            <div class="skill_graph" style="font-size: 14px;" data-bar="95">
+                                <span></span>
+                            </div>
+                        </div>
+                        
+                        <div class="list">
+                            <div class="img">
+                                <img src="./assets/img/skill/css_img.png" alt="skill image">
+                            </div>
+                            <div class="skill_graph" style="font-size: 14px;" data-bar="95">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <div class="list">
+                            <div class="img">
+                                <img src="./assets/img/skill/jquery_img.png" alt="skill image">
+                            </div>
+
+                            <div class="skill_graph" style="font-size: 14px;" data-bar="95">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <div class="list">
+                            <div class="img">
+                                <img src="./assets/img/skill/js_img.png" alt="skill image">
+                            </div>
+                            <div class="skill_graph" style="font-size: 14px;" data-bar="85">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <div class="list">
+                            <div class="img">
+                                <img src="./assets/img/skill/react_img.png" alt="skill image">
+                            </div>
+                            <div class="skill_graph" style="font-size: 14px;" data-bar="80">
+                                <span></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="skill_content">
+                        <p>현대적인 트렌드에 맞춘 기능 구현이 가능하며, 웹접근성, 웹표준성을 고려한 홈페이지 제작이 가능합니다. 퍼블리싱 뿐만아니라 개발자들과의 소통을 위해 프론트엔드 개발 공부를 꾸준히 해왔습니다. 실제 API를 웹페이지에 적용하고 벤엔드와 연동되는 웹페이지 구현 가능하고, 자바스크립트 라이브러리인 리액트로 싱글페이지 어플리케이션 제작 가능합니다.</p>
                     </div>
                 </div>
 
-                <div class="skill">
+                <div>
+                    <p class="tit half-highlight">Design Skill</p>
 
-                    <p class="half-highlight name">Skill</p>
-                    <p>웹 표준, 웹접근성을 고려하여 적절한 코드를 사용하고 다양한 종류와 버전의 브라우저에 맞게 마크업합니다.
-                    </p>
 
-                    <p>다양한 디자인 업무 경험을 통해 ui/ux에 대한 이해도와 구상력이 높으며 front end developer 준비를 통해 api와 백엔드에 대한 지식을 보유하고 있습니다.
-                    </p>
-
-                    <div class="skill_graph">
-                        <article class="skills">
-                            <div class="t-6">
-                                <p>HTML5<span></span><span class="skills"></span></p>
+                    <div class="skill_wrap">
+                        <div class="list">
+                            <div class="img">
+                                <img src="./assets/img/skill/ai_img.png" alt="skill image">
                             </div>
-                        </article>
+                            <div class="skill_graph" style="font-size: 14px;" data-bar="85">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <div class="list">
+                            <div class="img">
+                                <img src="./assets/img/skill/psd_img.png" alt="skill image">
+                            </div>
+                            <div class="skill_graph" style="font-size: 14px;" data-bar="90">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <div class="list">
+                            <div class="img">
+                                <img src="./assets/img/skill/figma_img.png" alt="skill image">
+                            </div>
+                            <div class="skill_graph" style="font-size: 14px;" data-bar="80">
+                                <span></span>
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="skill_content">
+                        <p>퍼블리셔로 취업전에 디자이너로 오랫동안 근무를 하였습니다. 디자인의 이해도가 높으며, 그 경험을 살려 디자이너를 도와 ui/ux 디자인 지원을 하였습니다. 디자인 경험이 있어 새로운 tool에 대한 이해가 빠르고 적응력도 빠릅니다. 디자이너 경험 덕분에 디자이너와의 소통도 다른 사람들보다 더 쉽고 원활하게 할 수 있는것이 강점이라고 생각합니다.</p>
+                    </div>
+                </div>
+                
+
+            </div>
+            
+        </div>
+    </section>
+
+
+    <section id="section3" class="section portfolio">
+
+        <div class="container">
+            <h1>Portfolio
+                <br/>
+                (web)
+            </h1>
+            <p>HTML, CSS, JS, React를 활용한 웹 포트폴리오</p>
+            
+            <div class="portfolio_wrap">
+                <div class="mockup_img">
+                    <img src="./assets/img/mac_mockup.png" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="date">2020.9.1 ~ 2021.6.30</div>
+
+                    <div class="tit">
+                        <p class="half-highlight"><span>케이옥션</span> 라이브경매</p>
+                    </div>
+
+                    <div class="detail">기존의 문제점을 보완하여 사용자에의 편의성을 고려한 ui/ux를 구성하여 제작한 페이지이며, 자바스크립트 라이브러리인 리액트를 사용하여 성능개선, 관리가 쉽고 용이하도록 제작하였습니다.</div>
+
+                    <div class="btn_wrap">
+                        <a href="#" class="cta">
+                            <span>detail page</span>
+                            <svg width="13px" height="10px" viewBox="0 0 13 10">
+                              <path d="M1,5 L11,5"></path>
+                              <polyline points="8 1 12 5 8 9"></polyline>
+                            </svg>
+                          </a>
+
+                          <a href="#" class="cta">
+                            <span>detail page</span>
+                            <svg width="13px" height="10px" viewBox="0 0 13 10">
+                              <path d="M1,5 L11,5"></path>
+                              <polyline points="8 1 12 5 8 9"></polyline>
+                            </svg>
+                          </a>
+                    </div>
+
+
+                    <div class="port_kill">
+                        <strong>skill</strong> 
+                        Html, Css, Javascript, React
+                    </div>
+                    <div class="port_color">
+                        <strong>color</strong>
+                         <ul>
+                             <li></li>
+                             <li></li>
+                             <li></li>
+                         </ul>
+                    </div>
+
+                
+                </div>
+            </div>
+
+            <div class="portfolio_wrap">
+                <div class="mockup_img">
+                    <img src="./assets/img/mac_mockup.png" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="date">2020.9.1 ~ 2021.6.30</div>
+
+                    <div class="tit">
+                        <p class="half-highlight"><span>케이옥션</span> 리뉴얼 프로젝트</p>
+                    </div>
+
+                    <div class="detail">리뉴얼을 목적으로 한 프로젝트이며 기존의 디자인보다 통일성 있고 사용자의 편의성을 고려하여 제작한 페이지입니다.</div>
+
+                    <div class="btn_wrap">
+                        <a href="#" class="cta">
+                            <span>detail page</span>
+                            <svg width="13px" height="10px" viewBox="0 0 13 10">
+                              <path d="M1,5 L11,5"></path>
+                              <polyline points="8 1 12 5 8 9"></polyline>
+                            </svg>
+                          </a>
+
+                          <a href="#" class="cta">
+                            <span>detail page</span>
+                            <svg width="13px" height="10px" viewBox="0 0 13 10">
+                              <path d="M1,5 L11,5"></path>
+                              <polyline points="8 1 12 5 8 9"></polyline>
+                            </svg>
+                          </a>
+                    </div>
+
+
+                    <div class="port_kill">
+                        <strong>skill</strong> 
+                        Html, Css, Javascript
+                    </div>
+                    <div class="port_color">
+                        <strong>color</strong>
+                         <ul>
+                             <li></li>
+                             <li></li>
+                             <li></li>
+                         </ul>
+                    </div>
+
+                
+                </div>
+            </div>
+
+            <div class="portfolio_wrap">
+                <div class="mockup_img">
+                    <img src="./assets/img/mac_mockup.png" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="date">2020.6.1 ~ 2020.6.30</div>
+
+                    <div class="tit">
+                        <p class="half-highlight"><span>MEGA BOX</span> 홈페이지</p>
+                    </div>
+
+                    <div class="detail">웹접근성, 웹표준, 크로스브라우징을 고려하여 제작한 메가박스 홈페이지입니다. 미디어쿼리를 이용하여 데스크탑, 태블릿, 모바일에서도 문제없이 홈페이지를 이용할 수 있도록 제작하였습니다.</div>
+
+                    <div class="btn_wrap">
+                        <a href="#" class="cta">
+                            <span>detail page</span>
+                            <svg width="13px" height="10px" viewBox="0 0 13 10">
+                              <path d="M1,5 L11,5"></path>
+                              <polyline points="8 1 12 5 8 9"></polyline>
+                            </svg>
+                          </a>
+
+                          <a href="#" class="cta">
+                            <span>detail page</span>
+                            <svg width="13px" height="10px" viewBox="0 0 13 10">
+                              <path d="M1,5 L11,5"></path>
+                              <polyline points="8 1 12 5 8 9"></polyline>
+                            </svg>
+                          </a>
+                    </div>
+
+
+                    <div class="port_kill">
+                        <strong>skill</strong> 
+                        Html, Css, Javascript
+                    </div>
+                    <div class="port_color">
+                        <strong>color</strong>
+                         <ul>
+                             <li></li>
+                             <li></li>
+                             <li></li>
+                         </ul>
+                    </div>
+
+                
+                </div>
+            </div>
+
+            <div class="portfolio_wrap">
+                <div class="mockup_img">
+                    <img src="./assets/img/mac_mockup.png" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="date">2020.6.1 ~ 2020.6.30</div>
+
+                    <div class="tit">
+                        <p class="half-highlight"><span>Nick</span> 메인페이지</p>
+                    </div>
+
+                    <div class="detail">비디오 태그와 다양한 효과를 활용한 나이키 메인페이지입니다.</div>
+
+                    <div class="btn_wrap">
+                        <a href="#" class="cta">
+                            <span>detail page</span>
+                            <svg width="13px" height="10px" viewBox="0 0 13 10">
+                              <path d="M1,5 L11,5"></path>
+                              <polyline points="8 1 12 5 8 9"></polyline>
+                            </svg>
+                          </a>
+
+                          <a href="#" class="cta">
+                            <span>detail page</span>
+                            <svg width="13px" height="10px" viewBox="0 0 13 10">
+                              <path d="M1,5 L11,5"></path>
+                              <polyline points="8 1 12 5 8 9"></polyline>
+                            </svg>
+                          </a>
+                    </div>
+
+
+                    <div class="port_kill">
+                        <strong>skill</strong> 
+                        Html, Css, Javascript
+                    </div>
+                    <div class="port_color">
+                        <strong>color</strong>
+                         <ul>
+                             <li></li>
+                             <li></li>
+                             <li></li>
+                         </ul>
+                    </div>
+
                 
                 </div>
             </div>
@@ -112,20 +497,239 @@
         </div>
     </section>
 
-
-    <section id="section3" class="section">
-
+    <section id="section4" class="section">
         <div class="container">
             <h1>Portfolio
                 <br/>
-                (web)
+                (mobile)
             </h1>
-            <p>HTML, CSS, JS를 활용한 웹 포트폴리오</p>
+            <p>HTML, CSS, JS, React를 활용한 웹 포트폴리오</p>
+        </div>
+
+        <div class="port_mobile">
+            <div class="mockup_img">
+                <div class="left">
+                    <img src="./assets/img/mobile_mockup.png" alt="">
+                </div>
+
+                <div class="center">
+                    <img src="./assets/img/mobile_mockup.png" alt="">
+                </div>
+
+                <div class="right">
+                    <img src="./assets/img/mobile_mockup.png" alt="">
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="date">2020.9.1 ~ 2021.6.1</div>
+
+                <div class="tit">
+                    <p class="half-highlight"><span>케이옥션</span> 모바일페이지</p>
+                </div>
+
+                <div class="detail">리뉴얼 프로젝트이며 모바일 ui/ux를 새롭게 구성하였습니다.</div>
+
+                <div class="btn_wrap">
+                    <a href="#" class="cta">
+                        <span>detail page</span>
+                        <svg width="13px" height="10px" viewBox="0 0 13 10">
+                          <path d="M1,5 L11,5"></path>
+                          <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                      </a>
+
+                      <a href="#" class="cta">
+                        <span>detail page</span>
+                        <svg width="13px" height="10px" viewBox="0 0 13 10">
+                          <path d="M1,5 L11,5"></path>
+                          <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                      </a>
+                </div>
+
+
+                <div class="port_kill">
+                    <strong>skill</strong> 
+                    Html, Css, Javascript
+                </div>
+                <div class="port_color">
+                    <strong>color</strong>
+                     <ul>
+                         <li></li>
+                         <li></li>
+                         <li></li>
+                     </ul>
+                </div>
+ 
+            </div>
+        </div>
+
+
+        <div class="port_mobile">
+            <div class="mockup_img">
+                <div class="left">
+                    <img src="./assets/img/mobile_mockup.png" alt="">
+                </div>
+
+                <div class="center">
+                    <img src="./assets/img/mobile_mockup.png" alt="">
+                </div>
+
+                <div class="right">
+                    <img src="./assets/img/mobile_mockup.png" alt="">
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="date">2021.12.1 ~ 2022.2.30</div>
+
+                <div class="tit">
+                    <p class="half-highlight"><span>소상소</span> 모바일페이지</p>
+                </div>
+
+                <div class="detail">소상고 모바일 어플리케이션 ui/ux 디자인과 퍼블리싱을 도맡아 하였습니다. </div>
+
+                <div class="btn_wrap">
+                    <a href="#" class="cta">
+                        <span>detail page</span>
+                        <svg width="13px" height="10px" viewBox="0 0 13 10">
+                          <path d="M1,5 L11,5"></path>
+                          <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                      </a>
+
+                      <a href="#" class="cta">
+                        <span>detail page</span>
+                        <svg width="13px" height="10px" viewBox="0 0 13 10">
+                          <path d="M1,5 L11,5"></path>
+                          <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                      </a>
+                </div>
+
+
+                <div class="port_kill">
+                    <strong>skill</strong> 
+                    Html, Css, Javascript
+                </div>
+                <div class="port_color">
+                    <strong>color</strong>
+                     <ul>
+                         <li></li>
+                         <li></li>
+                         <li></li>
+                     </ul>
+                </div>
+ 
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="section5" class="section">
+        <div class="container">
+            <h1>Portfolio
+                <br>
+                (design)
+            </h1>
+            <p></p>
+
+
+            <div class="design_port_wrap">
+                <div class="mouseCont">
+                    <img src="./assets/img/design/detail_page_02_thumb.jpg" alt="">
+                </div>
+
+                <div class="mouseCont">
+                    <img src="./assets/img/design/detail_page_03_thumb.jpg" alt="">
+                </div>
+
+                <div class="mouseCont">
+                    <img src="./assets/img/design/detail_page_04_thumb.jpg" alt="">
+                </div>
+
+                <div class="mouseCont">
+                    <img src="./assets/img/design/detail_page_05_thumb.jpg" alt="">
+                </div>
+
+                <div class="mouseCont">
+                    <img src="./assets/img/design/detail_page_06_thumb.jpg" alt="">
+                </div>
+
+
+                <div class="mouseCont">
+                    <img src="./assets/img/design/detail_page_09.jpg" alt="">
+                </div>
+
+                <div class="mouseCont">
+                    <img src="./assets/img/design/detail_page_10.jpg" alt="">
+                </div>
+
+                <div class="mouseCont">
+                    <img src="./assets/img/design/detail_page_11.jpg" alt="">
+                </div>
+
+                <div class="mouseCont">
+                    <img src="./assets/img/design/detail_page_13.jpg" alt="">
+                </div>
+
+                <div class="mouseCont">
+                    <img src="./assets/img/design/detail_page_15_thumb.jpg" alt="">
+                </div>
+
+                <div class="mouseCont">
+                    <img src="./assets/img/design/detail_page_16_thumb.jpg" alt="">
+                </div>
+
+                <div class="mouseCont">
+                    <img src="./assets/img/design/detail_page_17_thumb.jpg" alt="">
+                </div>
+
+
+            </div>
         </div>
     </section>
 
 
+    <section id="section6" class="section">
+        <div class="container">
+            <h1>SCRIPT EFFECT
+            </h1>
+            <p>JS를 활용한 여러가지 효과</p>
 
+
+
+            <div class="effect_wrap">
+
+                <div>
+                    <div class="img">
+                        <img src="./assets/img/background/img_01.jpg" alt="">
+                    </div>
+                </div>
+
+                <div>
+                    2
+                </div>
+
+            </div>
+        </div>
+
+
+        
+    </section>
+
+
+
+
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="./assets/js/style.js"></script>
     <script>
         var string = "Discover Think Create";
         var str = string.split("");
