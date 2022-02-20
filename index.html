@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -20,6 +21,14 @@
     <!--css-->
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 
     <!-- 파비콘 -->
@@ -44,7 +53,7 @@
 
 
 </head>
-<body>
+<body onscroll="SetDivPosition()">
 
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
@@ -64,11 +73,11 @@
     <!--//header-->
 
     <section id="section1">
-        <div class="video_wrap">
+        <!-- <div class="video_wrap">
             <video width="100%" height="969px" autoplay="" muted="" loop="">
                 <source src="assets/video/Clouds - 64767.mp4" type="video/mp4">
             </video>
-        </div>
+        </div> -->
         <div class="text_wrap">
             <p>WEB PUBLISHER & FRONTEND PORTFOLIO</p>
             <h2 id="typing" class="mouseCont">
@@ -295,15 +304,16 @@
             <p>HTML, CSS, JS, React를 활용한 웹 포트폴리오</p>
             
             <div class="portfolio_wrap">
+
                 <div class="mockup_img">
-                    <img src="./assets/img/mac_mockup.png" alt="">
+                    <img src="./assets/img/publishing/kauction_livepage.png" alt="">
                 </div>
 
                 <div class="content">
                     <div class="date">2020.9.1 ~ 2021.6.30</div>
 
                     <div class="tit">
-                        <p class="half-highlight"><span>케이옥션</span> 라이브경매</p>
+                        <p class="half-highlight"><span>K Auction</span> live page</p>
                     </div>
 
                     <div class="detail">기존의 문제점을 보완하여 사용자에의 편의성을 고려한 ui/ux를 구성하여 제작한 페이지이며, 자바스크립트 라이브러리인 리액트를 사용하여 성능개선, 관리가 쉽고 용이하도록 제작하였습니다.</div>
@@ -318,7 +328,7 @@
                           </a>
 
                           <a href="#" class="cta">
-                            <span>detail page</span>
+                            <span>view siste</span>
                             <svg width="13px" height="10px" viewBox="0 0 13 10">
                               <path d="M1,5 L11,5"></path>
                               <polyline points="8 1 12 5 8 9"></polyline>
@@ -334,9 +344,9 @@
                     <div class="port_color">
                         <strong>color</strong>
                          <ul>
-                             <li></li>
-                             <li></li>
-                             <li></li>
+                             <li style="background-color: #061839;"></li>
+                             <li style="background-color: #E02020;"></li>
+                             <li style="background-color: #eeeeee;"></li>
                          </ul>
                     </div>
 
@@ -346,14 +356,16 @@
 
             <div class="portfolio_wrap">
                 <div class="mockup_img">
-                    <img src="./assets/img/mac_mockup.png" alt="">
+                    <div class="mockup_img">
+                        <img src="./assets/img/publishing/kauction_hompage.png" alt="">
+                    </div>
                 </div>
 
                 <div class="content">
                     <div class="date">2020.9.1 ~ 2021.6.30</div>
 
                     <div class="tit">
-                        <p class="half-highlight"><span>케이옥션</span> 리뉴얼 프로젝트</p>
+                        <p class="half-highlight"><span>k auction</span> renewal</p>
                     </div>
 
                     <div class="detail">리뉴얼을 목적으로 한 프로젝트이며 기존의 디자인보다 통일성 있고 사용자의 편의성을 고려하여 제작한 페이지입니다.</div>
@@ -367,8 +379,8 @@
                             </svg>
                           </a>
 
-                          <a href="#" class="cta">
-                            <span>detail page</span>
+                          <a href="https://www.k-auction.com/" class="cta" target="_black">
+                            <span>view site</span>
                             <svg width="13px" height="10px" viewBox="0 0 13 10">
                               <path d="M1,5 L11,5"></path>
                               <polyline points="8 1 12 5 8 9"></polyline>
@@ -384,9 +396,9 @@
                     <div class="port_color">
                         <strong>color</strong>
                          <ul>
-                             <li></li>
-                             <li></li>
-                             <li></li>
+                             <li style="background-color: #061839;"></li>
+                             <li style="background-color: #F24F06;"></li>
+                             <li style="background-color: #eeeeee;"></li>
                          </ul>
                     </div>
 
@@ -396,14 +408,14 @@
 
             <div class="portfolio_wrap">
                 <div class="mockup_img">
-                    <img src="./assets/img/mac_mockup.png" alt="">
+                    <img src="./assets/img/publishing/magabox_page.png" alt="">
                 </div>
 
                 <div class="content">
                     <div class="date">2020.6.1 ~ 2020.6.30</div>
 
                     <div class="tit">
-                        <p class="half-highlight"><span>MEGA BOX</span> 홈페이지</p>
+                        <p class="half-highlight"><span>MEGA BOX</span> page</p>
                     </div>
 
                     <div class="detail">웹접근성, 웹표준, 크로스브라우징을 고려하여 제작한 메가박스 홈페이지입니다. 미디어쿼리를 이용하여 데스크탑, 태블릿, 모바일에서도 문제없이 홈페이지를 이용할 수 있도록 제작하였습니다.</div>
@@ -417,8 +429,8 @@
                             </svg>
                           </a>
 
-                          <a href="#" class="cta">
-                            <span>detail page</span>
+                          <a href="./site/megabox/index.html" class="cta" target="_black">
+                            <span>view site</span>
                             <svg width="13px" height="10px" viewBox="0 0 13 10">
                               <path d="M1,5 L11,5"></path>
                               <polyline points="8 1 12 5 8 9"></polyline>
@@ -434,9 +446,8 @@
                     <div class="port_color">
                         <strong>color</strong>
                          <ul>
-                             <li></li>
-                             <li></li>
-                             <li></li>
+                             <li style="background-color: #3A156A;"></li>
+                             <li style="background-color: #666666;"></li>
                          </ul>
                     </div>
 
@@ -446,14 +457,14 @@
 
             <div class="portfolio_wrap">
                 <div class="mockup_img">
-                    <img src="./assets/img/mac_mockup.png" alt="">
+                    <img src="./assets/img/publishing/nike_page.png" alt="">
                 </div>
 
                 <div class="content">
                     <div class="date">2020.6.1 ~ 2020.6.30</div>
 
                     <div class="tit">
-                        <p class="half-highlight"><span>Nick</span> 메인페이지</p>
+                        <p class="half-highlight"><span>Nike</span> main page</p>
                     </div>
 
                     <div class="detail">비디오 태그와 다양한 효과를 활용한 나이키 메인페이지입니다.</div>
@@ -467,8 +478,8 @@
                             </svg>
                           </a>
 
-                          <a href="#" class="cta">
-                            <span>detail page</span>
+                          <a href="./site/Nike/index.html" class="cta" target="_blank">
+                            <span>view site</span>
                             <svg width="13px" height="10px" viewBox="0 0 13 10">
                               <path d="M1,5 L11,5"></path>
                               <polyline points="8 1 12 5 8 9"></polyline>
@@ -484,9 +495,9 @@
                     <div class="port_color">
                         <strong>color</strong>
                          <ul>
-                             <li></li>
-                             <li></li>
-                             <li></li>
+                             <li style="background-color: #779F27;"></li>
+                             <li style="background-color: #333333;"></li>
+                    
                          </ul>
                     </div>
 
@@ -509,15 +520,15 @@
         <div class="port_mobile">
             <div class="mockup_img">
                 <div class="left">
-                    <img src="./assets/img/mobile_mockup.png" alt="">
+                    <img src="./assets/img/publishing/kacution_mobile_02.png" alt="">
                 </div>
 
                 <div class="center">
-                    <img src="./assets/img/mobile_mockup.png" alt="">
+                    <img src="./assets/img/publishing/kacution_mobile_01.png" alt="">
                 </div>
 
                 <div class="right">
-                    <img src="./assets/img/mobile_mockup.png" alt="">
+                    <img src="./assets/img/publishing/kacution_mobile_03.png" alt="">
                 </div>
             </div>
 
@@ -525,7 +536,7 @@
                 <div class="date">2020.9.1 ~ 2021.6.1</div>
 
                 <div class="tit">
-                    <p class="half-highlight"><span>케이옥션</span> 모바일페이지</p>
+                    <p class="half-highlight"><span>k auction</span> mobile page</p>
                 </div>
 
                 <div class="detail">리뉴얼 프로젝트이며 모바일 ui/ux를 새롭게 구성하였습니다.</div>
@@ -539,13 +550,6 @@
                         </svg>
                       </a>
 
-                      <a href="#" class="cta">
-                        <span>detail page</span>
-                        <svg width="13px" height="10px" viewBox="0 0 13 10">
-                          <path d="M1,5 L11,5"></path>
-                          <polyline points="8 1 12 5 8 9"></polyline>
-                        </svg>
-                      </a>
                 </div>
 
 
@@ -556,9 +560,9 @@
                 <div class="port_color">
                     <strong>color</strong>
                      <ul>
-                         <li></li>
-                         <li></li>
-                         <li></li>
+                        <li style="background-color: #061839;"></li>
+                        <li style="background-color: #F24F06;"></li>
+                        <li style="background-color: #eeeeee;"></li>
                      </ul>
                 </div>
  
@@ -569,15 +573,15 @@
         <div class="port_mobile">
             <div class="mockup_img">
                 <div class="left">
-                    <img src="./assets/img/mobile_mockup.png" alt="">
+                    <img src="./assets/img/publishing/sosangso_mobile_02.png" alt="">
                 </div>
 
                 <div class="center">
-                    <img src="./assets/img/mobile_mockup.png" alt="">
+                    <img src="./assets/img/publishing/sosangso_mobile_01.png" alt="">
                 </div>
 
                 <div class="right">
-                    <img src="./assets/img/mobile_mockup.png" alt="">
+                    <img src="./assets/img/publishing/sosangso_mobile_03.png" alt="">
                 </div>
             </div>
 
@@ -585,7 +589,7 @@
                 <div class="date">2021.12.1 ~ 2022.2.30</div>
 
                 <div class="tit">
-                    <p class="half-highlight"><span>소상소</span> 모바일페이지</p>
+                    <p class="half-highlight"><span>sosangso</span> mobile page</p>
                 </div>
 
                 <div class="detail">소상고 모바일 어플리케이션 ui/ux 디자인과 퍼블리싱을 도맡아 하였습니다. </div>
@@ -598,14 +602,6 @@
                           <polyline points="8 1 12 5 8 9"></polyline>
                         </svg>
                       </a>
-
-                      <a href="#" class="cta">
-                        <span>detail page</span>
-                        <svg width="13px" height="10px" viewBox="0 0 13 10">
-                          <path d="M1,5 L11,5"></path>
-                          <polyline points="8 1 12 5 8 9"></polyline>
-                        </svg>
-                      </a>
                 </div>
 
 
@@ -616,9 +612,9 @@
                 <div class="port_color">
                     <strong>color</strong>
                      <ul>
-                         <li></li>
-                         <li></li>
-                         <li></li>
+                         <li style="background-color: #F53A5C;"></li>
+                         <li style="background-color: #EB0D2F;"></li>
+                         <li style="background-color: #666666;"></li>
                      </ul>
                 </div>
  
@@ -695,29 +691,88 @@
 
     <section id="section6" class="section">
         <div class="container">
-            <h1>SCRIPT EFFECT
+            <h1>JAVASCRIPT <br>EFFECT
             </h1>
             <p>JS를 활용한 여러가지 효과</p>
 
+            <div class="swiper effectSwiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="./assets/img/background/mouseEffect_01.png" alt="">
+                        <div class="slide_description">
 
+                            <h3>Mouse Effect</h3>
+                            <p>javascript를 이용한 이미지 효과</p>
 
-            <div class="effect_wrap">
+                            <button class="swipe_btn">View More</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/background/mouseEffect_02.png" alt="">
+                        <div class="slide_description">
 
-                <div>
-                    <div class="img">
-                        <img src="./assets/img/background/img_01.jpg" alt="">
+                            <h3>Mouse Effect</h3>
+                            <p>javascript를 이용한 이미지 효과</p>
+
+                            <button class="swipe_btn">View More</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/background/mouseEffect_03.png" alt="">
+
+                        <div class="slide_description">
+
+                            <h3>Parallax Effect</h3>
+                            <p>javascript를 이용한 페럴럭스 효과</p>
+
+                            <button class="swipe_btn">View More</button>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <img src="./assets/img/background/mouseEffect_04.png" alt="">
+
+                        <div class="slide_description">
+
+                            <h3>Parallax Effect</h3>
+                            <p>javascript를 이용한 페럴럭스 효과</p>
+
+                            <button class="swipe_btn">View More</button>
+                        </div>
                     </div>
                 </div>
-
-                <div>
-                    2
-                </div>
-
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
 
 
         
+    </section>
+
+    <section id="section7" class="section footer"> 
+        <div class="container">
+            <div class="footer_wrap">
+                <div class="tit">
+                    <h1>contact <br/>me</h1>
+                </div>
+                <div class="info">
+                    <div>
+                        <p>Front End Development : Baek Eun Ji</p>
+                        <p>PHONE : 010 2661 0497</p>
+                        <p class="email">Email : qordmswl5631@naver.com</p>
+                    </div>
+                </div>
+                
+                <div class="qrcode">
+                    <img src="./assets/img/qrcode.png" alt="">
+                </div>
+                
+            </div>
+        </div>
     </section>
 
 
@@ -729,7 +784,31 @@
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="./assets/js/style.js"></script>
+    <!-- 스크롤 위치 기억하여 뿌려주기 시작 -->
+    <script language="javascript" for="plan6" event="onload">
+        //plan6이라는 frame이 onload될때 스크립트를 실행.  
+        var strCook = document.cookie;//저장된 쿠키 값을 받아온다.
+        if(strCook.indexOf("!~")!=0) {
+        var intS = strCook.indexOf("!~");
+        var intE = strCook.indexOf("~!");
+        var strPos = strCook.substring(intS+2, intE);//스크롤 위치를 구한다.
+        document.body.scrollTop = strPos;//스크롤 위치를 적용시킨다.
+        }
+        document.plan6.resizeFrame(this);
+    </script>
+    
+    <!-- 스크롤 위치 쿠키에 저장 -->
+    
+      <script type = "text/javascript">
+    
+     function SetDivPosition()
+     {
+      var intY = document.body.scrollTop;
+      document.cookie = "yPos=!~"+intY+"~!";
+     }
+     </script>
     <script>
         var string = "Discover Think Create";
         var str = string.split("");
@@ -737,7 +816,7 @@
         (function animate() {
         str.length > 0 ? el.innerHTML += str.shift() : clearTimeout(running); 
         var running = setTimeout(animate, 90);
-        })();
+        })();    
 
     </script>
 
