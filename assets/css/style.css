@@ -135,7 +135,7 @@ body {
     margin-bottom: 120px;
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
-    font-size: 65px;
+    font-size: 75px;
     line-height: 1em;
     color: #000000;
     text-transform: uppercase;
@@ -774,4 +774,95 @@ p.half-highlight {
 }
 #section7 .footer_wrap > .qrcode > img {
     max-height: 100%;
+}
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(0 0 0 / 50%);
+    height: 100%;
+    overflow: hidden;
+    z-index: 200;
+  }
+  
+  .modal.show {
+    display: block;
+  }
+
+
+  .modal_wrap {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 850px;
+    height: auto;
+    background-color: #fff;
+  }
+
+  body.scroll_lock {
+    overflow: hidden;
+    height: 100%;
+  }
+
+.modalContent .modal_header {
+    position: relative;
+    width: 100%; height: 60px;
+    background-color: #252525;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modalContent .modal_header span {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.modalContent .modal_header > button {
+    position: absolute;
+    top: 50%; right: 20px;
+    transform: translateY(-50%);
+    background-color: transparent;
+}
+
+.modalContent .modal_header > button > i {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.modalContent .sub_title {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #333333;
+}
+.modalContent .sub_title > span {
+    font-size: 16px;
+    color: #000000;
+}
+.modalContent > .modal_body {
+    width: 100%;
+    height: 500px;
+    overflow-y: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 25px;
+    box-sizing: border-box;
+}
+.modalContent > .modal_body > img {
+    display: none;
+    max-width: 600px;
+}
+.modalContent > .modal_body > img.show {
+    display: block;
 }

@@ -50,5 +50,68 @@ window.addEventListener("mousemove", function(e){
 });
 
 
+// 모달팝업 script 
+const get = (target) => {   
+    return document.querySelector(target)
+}
+
+const getAll = (target) => {   
+    return document.querySelectorAll(target)
+}
+
+
+const $modalbutton = getAll('.modal_btn');
+const $modal = get('.modal');
+const $modalCancelButton = get('.modal_button.cancel');
+const $body = get('body');
+const $img = getAll('.modalContent > .modal_body > img');
+
+const toggleModal = () => {
+    $modal.classList.toggle('show');
+    $body.classList.toggle('scroll_lock');
+}
+
+
+$modalbutton.forEach(function(elem){
+    elem.addEventListener('click', function(e) {
+        toggleModal();
+        document.querySelector('.modal_body').scrollTop = "0";
+        let $header = elem.getAttribute('data-header'),
+        $value = elem.getAttribute('data-value'),
+        $class = elem.getAttribute('data-class');
+        document.querySelector('.modalContent > .modal_header > span').textContent = $header;
+        document.querySelector('.modalContent > .sub_title > span').textContent = $value;
+
+        let idx = Array.from($modalbutton).indexOf(e.currentTarget);
+        for (let i = 0; i<$img.length; i++) {
+            $img[i].style.display = "none"
+        }
+        $img[idx].style.display = "block";
+        
+    });
+});
+
+
+$modalCancelButton.addEventListener('click', () => {
+    toggleModal()
+});
+
+window.addEventListener('click', (e) => {
+    if (e.target === $modal) {
+      toggleModal()
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
 
 
