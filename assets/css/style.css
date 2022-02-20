@@ -3,6 +3,7 @@
     margin: 0 auto;
     box-sizing: border-box;
     padding: 0 30px;
+    overflow: hidden;
 }
 .row {
     padding: 0 20px;
@@ -67,9 +68,33 @@ body {
 .nav {
     position: fixed;
     top: 0; left: 0;
+    height: 80px;
     width: 100%;
     background-color: rgba(0,0,0,0.2);
-    z-index: 10;
+    z-index: 500;
+}
+
+
+
+.util_menu {
+    position: absolute;
+    top: 0; right: 0;
+    width: 1100px;
+}
+.nav > h1 {
+    position: relative;
+    padding-left: 40px;
+    box-sizing: border-box;
+    height: 100%;
+    line-height: 80px;
+}
+.nav > h1 > a {
+    display: inline-block;
+    width: 100%; height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #ffffff;
 }
 .nav ul {
     text-align: center;
@@ -77,7 +102,7 @@ body {
 }
 .nav ul li {
     display: inline-block;
-    width: 20%; height: 60px;
+    width: 16.6667%; height: 80px;
     vertical-align: top;
 }
 .nav ul li a {
@@ -87,7 +112,11 @@ body {
     justify-content: center;
     font-size: 14px;
     color: #ffffff;
-    opacity: 0.5;
+    /* opacity: 0.5; */
+    opacity: 1;
+}
+.nav ul li.active > a {
+    opacity: 1;
 }
 
 #section1 {
@@ -96,19 +125,11 @@ body {
     background-color: #000000;
     width: 100%; height: 100vh;
 }
-/* #section1 .video_wrap {
-    position: relative;
-    width: 100%; height: 100%;
-}
-#section1 .video_wrap > video {
-    position: relative;
-    top: 0; left: 0;
-    height: 100% !important;
-    border: none !important;
-} */
+
 #section1 .text_wrap {
+    width: 100%;
     position: absolute;
-    left: 25px; bottom: 140px;
+    left: 40px; bottom: 140px;
 }
 #section1 .text_wrap p {
     font-family: 'Montserrat', sans-serif;
@@ -120,7 +141,7 @@ body {
 #typing {
     width: auto;
     position: relative;
-    font-size: 115px;
+    font-size: 80px;
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -131,6 +152,7 @@ body {
     padding: 150px 0;
     box-sizing: border-box;
 }
+
 .section h1 {
     margin-bottom: 120px;
     font-family: 'Poppins', sans-serif;
@@ -756,6 +778,9 @@ p.half-highlight {
 
 } */
 #section7 .footer_wrap > .tit > h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 1em;
     color: #ffffff;
     margin-bottom: 0;
     font-size: 52px;
@@ -866,3 +891,4 @@ p.half-highlight {
 .modalContent > .modal_body > img.show {
     display: block;
 }
+

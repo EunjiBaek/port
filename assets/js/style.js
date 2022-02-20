@@ -1,5 +1,6 @@
 $(document).ready(function() {
     // $(".skill_graph").addClass("active")
+
     $(".skill_graph span").each(function() {
         $(this).animate({
             "width": $(this).parent().attr("data-bar") + "%"
@@ -26,6 +27,10 @@ $(document).ready(function() {
     });
 
 });
+
+
+
+
 
 const cursor = document.querySelector(".cursor");
 const follower = document.querySelector(".cursor-follower");
@@ -101,6 +106,64 @@ window.addEventListener('click', (e) => {
       toggleModal()
     }
 });
+
+
+
+
+// 페럴럭스
+
+document.querySelectorAll(".util_menu ul li a").forEach(elem => {
+    elem.addEventListener("click", (e) => {
+        e.preventDefault();
+        document.querySelector(elem.getAttribute("href")).scrollIntoView({
+            behavior: "smooth"
+        })
+    })
+});
+
+
+
+
+function scrollProgress(){
+    let scrollTop = (document.documentElement.scrollTop || window.scrollY || window.pageYOffset) + window.innerHeight; 
+    const reveal = document.querySelectorAll(".reveal");
+
+
+    reveal.forEach(el => {
+        const revealDelay = el.dataset.delay;
+
+        if( scrollTop > el.parentElement.offsetTop ){
+            if( revealDelay == undefined ){
+                el.classList.add("show");
+            } else {
+                setTimeout(() => {
+                    el.classList.add("show");
+                }, revealDelay);
+            }
+        }
+    })
+
+    document.querySelectorAll(".section").forEach((item, index) => {
+        scrollTop > item.offsetTop ? item.classList.add("show") : item.classList.remove("show");
+
+    });
+
+
+    // web portfolio
+    document.querySelectorAll(".portfolio_wrap").forEach(item => {
+        scrollTop > item.offsetTop ? item.classList.add("show") : item.classList.remove("show");
+    });
+
+
+    // mobile portfolio
+    document.querySelectorAll(".port_mobile").forEach(item => {
+        scrollTop > item.offsetTop ? item.classList.add("show") : item.classList.remove("show");
+    });
+
+}
+
+window.addEventListener("scroll", scrollProgress);
+
 
 
 

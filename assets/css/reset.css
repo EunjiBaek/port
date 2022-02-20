@@ -102,3 +102,153 @@ div::-webkit-scrollbar-track
 body::-webkit-scrollbar-track {
     background-color: rgba(255,255,255,0.1);
   }
+
+
+
+.section h1 {
+    opacity: 0;
+    transform: translateY(300px);
+    transition: all 1s .3s cubic-bezier(0, 0.66, 0.38, 1.01);
+}
+.section.show h1 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section > div > p {
+    opacity: 0;
+    transform: translateX(-300px);
+    transition: all 1s .3s cubic-bezier(0, 0.66, 0.38, 1.01);
+}
+
+#section3.section > div > p {
+    opacity: 0;
+    transform: translateX(300px);
+    transition: all 1s .3s cubic-bezier(0, 0.66, 0.38, 1.01);
+}
+#section3.section.show > div > p,
+.section.show > div > p {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+#section2.section .profile .my_img {
+    opacity: 0;
+    /* transform: translateX(-200px); */
+    transition: all 1s .5s cubic-bezier(0, 0.66, 0.38, 1.01);
+}
+
+#section2.section.show .profile .my_img {
+    opacity: 1;
+    /* transform: translateX(0); */
+}
+
+#section2.section .profile .content .top {
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: all 1s 1s cubic-bezier(0, 0.66, 0.38, 1.01);
+}
+#section2.section .profile .content .bottom {
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: all 1s 1.4s cubic-bezier(0, 0.66, 0.38, 1.01);
+}
+
+#section2.section.show .profile .content .top,
+#section2.section.show .profile .content .bottom {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
+/* web portfolio 패럴렉스 */
+.portfolio_wrap > .mockup_img {
+    opacity: 0;
+    transform: translateX(-300px);
+    transition: all 1s .4s cubic-bezier(0, 0.66, 0.38, 1.01);
+}
+.portfolio_wrap.show > .mockup_img {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.portfolio_wrap > .content {
+    opacity: 0;
+    transform: translateX(-300px);
+    transition: all 1s .8s cubic-bezier(0, 0.66, 0.38, 1.01);
+}
+.portfolio_wrap.show > .content {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+/* web portfolio 패럴렉스 */
+.port_mobile > .mockup_img {
+    opacity: 0;
+    transition: all 1s .5s cubic-bezier(0, 0.66, 0.38, 1.01);
+}
+.port_mobile.show > .mockup_img {
+    opacity: 1;
+}
+
+.port_mobile > .content {
+    opacity: 0;
+    transform: translateX(300px);
+    transition: all 1s .8s cubic-bezier(0, 0.66, 0.38, 1.01);
+}
+.port_mobile.show > .content {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+.reveal > img,
+.reveal > span {
+    opacity: 0;
+}
+.reveal.show > img,
+.reveal.show > span {
+    animation: opacity 1000ms linear forwards;
+}
+
+.reveal {
+    position: relative;
+}
+.reveal::before {
+    content: '';
+    position: absolute;
+    right: 0; top: 0;
+    width: 0; height: 100%;
+    z-index: 100;
+    background-color: #fff;
+}
+
+.reveal.show::before {
+    animation: reveal 1000ms cubic-bezier(0.77, 0, 0.18, 1);
+}
+.reveal.reveal-RTL.show::before {
+    animation: reveal-RTL 1000ms cubic-bezier(0.77, 0, 0.18, 1);
+}
+
+@keyframes opacity {
+    0%   {opacity: 0;}
+    60%  {opacity: 0;}
+    70%  {opacity: 1;}
+    100% {opacity: 1;}
+}
+@keyframes reveal {
+    0%   {width: 0;    left: 0;}
+    50%  {width: 100%; left: 0;}
+    80%  {width: 100%; left: 0;}
+    100% {width: 0;    left: 100%;}
+}
+@keyframes reveal-RTL {
+    0%   {width: 0;    right: 0;}
+    50%  {width: 100%; right: 0;}
+    80%  {width: 100%; right: 0;}
+    100% {width: 0;    right: 100%;}
+}
+
