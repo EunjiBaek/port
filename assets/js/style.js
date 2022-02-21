@@ -70,6 +70,17 @@ const $modal = get('.modal');
 const $modalCancelButton = get('.modal_button.cancel');
 const $body = get('body');
 const $img = getAll('.modalContent > .modal_body > img');
+const $modal_header = document.querySelector('.modalContent > .modal_header > span');
+const $modal_subtitle = document.querySelector('.modalContent > .sub_title > span');
+const $modal_body = document.querySelector('.modalContent > .modal_body');
+const $detail_page_btn = getAll('.detail_page_btn');
+
+
+// 모달내용 비우기
+$modal_header.innerHTML = undefined;
+$modal_subtitle.innerHTML = undefined;
+$modal_body.innerHTML = undefined;
+
 
 const toggleModal = () => {
     $modal.classList.toggle('show');
@@ -77,21 +88,49 @@ const toggleModal = () => {
 }
 
 
+
+$detail_page_btn.forEach(function(elem) {
+    elem.addEventListener('click', function(e){
+        e.preventDefault();
+        toggleModal();
+        $modal_body.scrollTop = "0";
+        let $header = elem.getAttribute('data-header'),
+        $value = elem.getAttribute('data-value');
+        $modal_header.textContent = $header;
+        $modal_subtitle.textContent = $value;
+
+
+        let idx = Array.from($detail_page_btn).indexOf(e.currentTarget);
+        $modal_body.innerHTML = "";
+        if ( idx === 0) {
+            $modal_body.innerHTML = `<img src="./assets/img/publishing_detail/Kauction_live_detail.png" alt="">`;
+        } else if ( idx === 1) {
+            $modal_body.innerHTML = `<img src="./assets/img/publishing_detail/Kauction_renewal_detail.png" alt="">`
+        } else {
+            $modal_body.innerHTML = `<img src="./assets/img/publishing_detail/megabox_detail.png" alt=""></img>`
+        }
+
+    });
+})
+
+
+
 $modalbutton.forEach(function(elem){
     elem.addEventListener('click', function(e) {
+        e.preventDefault();
         toggleModal();
-        document.querySelector('.modal_body').scrollTop = "0";
+        $modal_body.scrollTop = "0";
         let $header = elem.getAttribute('data-header'),
-        $value = elem.getAttribute('data-value'),
-        $class = elem.getAttribute('data-class');
-        document.querySelector('.modalContent > .modal_header > span').textContent = $header;
-        document.querySelector('.modalContent > .sub_title > span').textContent = $value;
-
+        $value = elem.getAttribute('data-value');
+        $modal_header.textContent = $header;
+        $modal_subtitle.textContent = $value;
+        $modal_body.innerHTML = "";
         let idx = Array.from($modalbutton).indexOf(e.currentTarget);
         for (let i = 0; i<$img.length; i++) {
             $img[i].style.display = "none"
         }
         $img[idx].style.display = "block";
+        $modal_body.append($img[idx]);
         
     });
 });
