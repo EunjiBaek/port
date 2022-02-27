@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+
+body {
+    overflow-x: hidden;
+}
+
+
 /* 여백 초기화 */
 body,div,ul,li,dl,dd,dt,ol,h1,h2,h3,h4,h5,h6,input,fieldset,legend,p,select,table,th,td,tr,textarea,button,form,figure,figcaption{margin:0; padding:0;}
 
@@ -28,6 +34,9 @@ a:hover {color: #000000;}
     font-weight: 600;
     font-style: normal;
 }
+
+
+
 
 
 body, input, textarea, select, button, table {font-family: 'S-CoreDream-4Regular', 'Nanum Gothic', AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; color: #000000; font-size: 13px; line-height: 1.5; font-weight: 400;}
@@ -105,7 +114,7 @@ body::-webkit-scrollbar-track {
 
 
 
-.section h1 {
+/* .section h1 {
     opacity: 0;
     transform: translateY(300px);
     transition: all 1s .3s cubic-bezier(0, 0.66, 0.38, 1.01);
@@ -130,18 +139,16 @@ body::-webkit-scrollbar-track {
 .section.show > div > p {
     opacity: 1;
     transform: translateX(0);
-}
+} */
 
 
-#section2.section .profile .my_img {
+/* #section2.section .profile .my_img {
     opacity: 0;
-    /* transform: translateX(-200px); */
     transition: all 1s .5s cubic-bezier(0, 0.66, 0.38, 1.01);
 }
 
 #section2.section.show .profile .my_img {
     opacity: 1;
-    /* transform: translateX(0); */
 }
 
 #section2.section .profile .content .top {
@@ -159,12 +166,12 @@ body::-webkit-scrollbar-track {
 #section2.section.show .profile .content .bottom {
     opacity: 1;
     transform: translateX(0);
-}
+} */
 
 
 
 /* web portfolio 패럴렉스 */
-.portfolio_wrap > .mockup_img {
+/* .portfolio_wrap > .mockup_img {
     opacity: 0;
     transform: translateX(-300px);
     transition: all 1s .4s cubic-bezier(0, 0.66, 0.38, 1.01);
@@ -182,11 +189,11 @@ body::-webkit-scrollbar-track {
 .portfolio_wrap.show > .content {
     opacity: 1;
     transform: translateX(0);
-}
+} */
 
 
 /* web portfolio 패럴렉스 */
-.port_mobile > .mockup_img {
+/* .port_mobile > .mockup_img {
     opacity: 0;
     transition: all 1s .5s cubic-bezier(0, 0.66, 0.38, 1.01);
 }
@@ -202,7 +209,7 @@ body::-webkit-scrollbar-track {
 .port_mobile.show > .content {
     opacity: 1;
     transform: translateX(0);
-}
+} */
 
 
 .reveal > img,
