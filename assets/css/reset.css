@@ -113,8 +113,20 @@ body::-webkit-scrollbar-track {
   }
 
 
+#section1 .text_wrap p {
+    opacity: 0;
+    transform: translateY(300px);
+    transition: all 1s .3s cubic-bezier(0, 0.66, 0.38, 1.01);
+}
+#section1.section.show .text_wrap p {
+    opacity: 1;
+    transform: translateY(0);
+}
 
-/* .section h1 {
+
+
+
+.section h1 {
     opacity: 0;
     transform: translateY(300px);
     transition: all 1s .3s cubic-bezier(0, 0.66, 0.38, 1.01);
@@ -124,10 +136,80 @@ body::-webkit-scrollbar-track {
     transform: translateY(0);
 }
 
+#section2.section .profile_cnt .tit {
+    opacity: 0;
+    transform: translateX(-300px);
+    transition: all 1.2s .3s cubic-bezier(0, 0.66, 0.38, 1.01);
+}
+#section2.section.show .profile_cnt .tit {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+#section2.section .profile_cnt .sub_tit {
+    opacity: 0;
+    transform: translateX(-300px);
+    transition: all 1.4s .5s cubic-bezier(0, 0.66, 0.38, 1.01);
+}
+#section2.section.show .profile_cnt .sub_tit {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#section2.section .profile_cnt .content {
+    opacity: 0;
+    transform: translateX(-300px);
+    transition: all 1.6s .7s cubic-bezier(0, 0.66, 0.38, 1.01);
+}
+#section2.section.show .profile_cnt .content {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+#section2_1.section .skills > div > p {
+    opacity: 0;
+    transform: translateY(200px);
+    transition: all 1s 0.1s cubic-bezier(0, 0.66, 0.38, 1.01);
+}
+#section2_1.section .skills > div.show > p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#section2_1.section .skills > div > .skill_wrap {
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: all 1s 0.9s cubic-bezier(0, 0.66, 0.38, 1.01);
+}
+#section2_1.section .skills > div.show > .skill_wrap {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#section2_1.section .skills > div > .skill_content {
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: all 1s 0.9s cubic-bezier(0, 0.66, 0.38, 1.01);
+}
+#section2_1.section .skills > div.show > .skill_content {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+
+
+
+
 .section > div > p {
     opacity: 0;
     transform: translateX(-300px);
     transition: all 1s .3s cubic-bezier(0, 0.66, 0.38, 1.01);
+}
+.section.show > div > p {
+    opacity: 1;
+    transform: translateX(0px);
 }
 
 #section3.section > div > p {
@@ -139,57 +221,47 @@ body::-webkit-scrollbar-track {
 .section.show > div > p {
     opacity: 1;
     transform: translateX(0);
-} */
-
-
-/* #section2.section .profile .my_img {
-    opacity: 0;
-    transition: all 1s .5s cubic-bezier(0, 0.66, 0.38, 1.01);
 }
-
-#section2.section.show .profile .my_img {
-    opacity: 1;
-}
-
-#section2.section .profile .content .top {
-    opacity: 0;
-    transform: translateX(-200px);
-    transition: all 1s 1s cubic-bezier(0, 0.66, 0.38, 1.01);
-}
-#section2.section .profile .content .bottom {
-    opacity: 0;
-    transform: translateX(-200px);
-    transition: all 1s 1.4s cubic-bezier(0, 0.66, 0.38, 1.01);
-}
-
-#section2.section.show .profile .content .top,
-#section2.section.show .profile .content .bottom {
-    opacity: 1;
-    transform: translateX(0);
-} */
-
 
 
 /* web portfolio 패럴렉스 */
-/* .portfolio_wrap > .mockup_img {
+.portfolio_wrap > .mockup_img,
+.portfolio_wrap > .mockup_img {
     opacity: 0;
     transform: translateX(-300px);
     transition: all 1s .4s cubic-bezier(0, 0.66, 0.38, 1.01);
 }
+.portfolio_wrap.right > .mockup_img,
+.portfolio_wrap.right > .mockup_img {
+    opacity: 0;
+    transform: translateX(300px);
+    transition: all 1s .4s cubic-bezier(0, 0.66, 0.38, 1.01);
+}
 .portfolio_wrap.show > .mockup_img {
-    opacity: 1;
-    transform: translateX(0);
+    opacity: 1 !important;
+    transform: translateX(0) !important;
 }
 
+.portfolio_wrap > .content,
 .portfolio_wrap > .content {
     opacity: 0;
     transform: translateX(-300px);
     transition: all 1s .8s cubic-bezier(0, 0.66, 0.38, 1.01);
 }
+.portfolio_wrap.right > .content,
+.portfolio_wrap.right > .content {
+    opacity: 0;
+    transform: translateX(300px);
+    transition: all 2s .8s cubic-bezier(0, 0.66, 0.38, 1.01);
+}
+
 .portfolio_wrap.show > .content {
-    opacity: 1;
-    transform: translateX(0);
-} */
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+}
+
+
+
 
 
 /* web portfolio 패럴렉스 */

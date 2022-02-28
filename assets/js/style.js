@@ -1,6 +1,24 @@
 $(document).ready(function() {
     // $(".skill_graph").addClass("active")
 
+    document.getElementById("section1").classList.add("show");
+
+    $("#section1 .title > h2.top").lettering();
+    $("#section1 .title > h2.bottom").lettering();
+
+    
+    var char = '[class*="char"]';
+    var tl = new TimelineLite();
+
+    // Stagger letter animation
+    tl.staggerFrom(char, 1.5, {
+        opacity: 0,
+        ease: Elastic.easeOut,
+        delay: 1.5,
+        y: '100%'
+    }, 0.05);
+
+
     $(".skill_graph span").each(function() {
         $(this).animate({
             "width": $(this).parent().attr("data-bar") + "%"
@@ -148,9 +166,7 @@ window.addEventListener('click', (e) => {
 
 
 
-
 // 페럴럭스
-
 document.querySelectorAll(".util_menu ul li a").forEach(elem => {
     elem.addEventListener("click", (e) => {
         e.preventDefault();
@@ -182,14 +198,23 @@ function scrollProgress(){
         }
     })
 
+
+
     document.querySelectorAll(".section").forEach((item, index) => {
         scrollTop > item.offsetTop ? item.classList.add("show") : item.classList.remove("show");
 
     });
 
 
+    // about me skill
+    document.querySelectorAll("#section2_1.section .skills > div").forEach(item => {
+        scrollTop > item.offsetTop ? item.classList.add("show") : item.classList.remove("show");
+    });
+
+
+
     // web portfolio
-    document.querySelectorAll(".portfolio_wrap").forEach(item => {
+    document.querySelectorAll("#section3 > div > div").forEach(item => {
         scrollTop > item.offsetTop ? item.classList.add("show") : item.classList.remove("show");
     });
 
@@ -294,7 +319,7 @@ $(".number").each(function (i) {
     });
 
 
-  });
+});
   
 
 

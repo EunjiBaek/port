@@ -81,13 +81,13 @@
     </nav>
     <!--//header-->
 
-    <section id="section1" class="section">
+    <section id="section1">
 
         <div class="text_wrap">
             <p>WEB PUBLISHER & FRONTEND PORTFOLIO</p>
             <div class="title mouseCont">
-                <strong class="top">welcome to my</strong>
-                <strong class="bottom">portfolio</strong>
+                <h2 class="top">welcome to my</h2>
+                <h2 class="bottom">portfolio</h2>
             </div>
         </div>
     </section>
@@ -117,23 +117,23 @@
                 <!--프로필 이미지-->
                 <div class="profile_img">
                     <div class="img img01">
-                        <img src="./assets/img/1804E3494EFD3EE015.jpg" alt="">
+                        <img src="./assets/img/background/aboutme_img_01.jpg" alt="">
                     </div>
 
                     <div class="img img02">
-                        <img src="./assets/img/1804E3494EFD3EE015.jpg" alt="">
+                        <img src="./assets/img/background/aboutme_img_02.jpg" alt="">
                     </div>
 
                     <div class="img img03">
-                        <img src="./assets/img/1804E3494EFD3EE015.jpg" alt="">
+                        <img src="./assets/img/background/aboutme_img_03.jpg" alt="">
                     </div>
 
                     <div class="img img04">
-                        <img src="./assets/img/1804E3494EFD3EE015.jpg" alt="">
+                        <img src="./assets/img/background/aboutme_img_04.jpg" alt="">
                     </div>
 
                     <div class="img img05">
-                        <img src="./assets/img/1804E3494EFD3EE015.jpg" alt="">
+                        <img src="./assets/img/background/aboutme_img_05.jpg" alt="">
                     </div>
                 </div>
                 <!--//프로필 이미지-->
@@ -192,9 +192,6 @@
                         </div>
 
                     </div>
-
-
-
 
                     <div class="skill_content">
                         <p>현대적인 트렌드에 맞춘 기능 구현이 가능하며, 웹접근성, 웹표준성을 고려한 홈페이지 제작이 가능합니다. 퍼블리싱 뿐만아니라 개발자들과의 소통을 위해 프론트엔드 개발 공부를 꾸준히 해왔습니다. 실제 API를 웹페이지에 적용하고 벤엔드와 연동되는 웹페이지 구현 가능하고, 자바스크립트 라이브러리인 리액트로 싱글페이지 어플리케이션 제작 가능합니다.</p>
@@ -818,6 +815,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="./assets/js/style.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.js"></script>
+
+
     <!-- 스크롤 위치 기억하여 뿌려주기 시작 -->
     <script language="javascript" for="plan6" event="onload">
         //plan6이라는 frame이 onload될때 스크립트를 실행.  
@@ -832,15 +832,12 @@
     </script>
     
     <!-- 스크롤 위치 쿠키에 저장 -->
-    
-      <script type = "text/javascript">
-    
-     function SetDivPosition()
-     {
-      var intY = document.body.scrollTop;
-      document.cookie = "yPos=!~"+intY+"~!";
-     }
-     </script>
+    <script type = "text/javascript">
+        function SetDivPosition(){
+            var intY = document.body.scrollTop;
+            document.cookie = "yPos=!~"+intY+"~!";
+        }
+    </script>
 
 
 

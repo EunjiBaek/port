@@ -128,7 +128,7 @@ body {
 }
 
 #section1 .text_wrap {
-    width: 100%;
+    width: auto;
     position: absolute;
     left: 40px; bottom: 140px;
 }
@@ -142,6 +142,8 @@ body {
 #section1 .title {
     width: auto;
     position: relative;
+}
+#section1 .title > h2 {
     font-size: 80px;
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
@@ -149,10 +151,11 @@ body {
     line-height: 1.2em;
     text-transform: uppercase;
 }
-#section1 .title > strong {
-    display: block;
+#section1 .title > h2.top > span,
+#section1 .title > h2.bottom > span {
+    display: inline-block;
 }
-#section1 .title > strong.bottom {
+#section1 .title > h2.bottom {
     font-weight: 300;
 }
 .section {
@@ -204,17 +207,28 @@ p.half-highlight {
     width: 280px;
     height: 350px;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#section2 .profile > .profile_img > .img > img {
+    max-height: 100%;
+}
+#section2 .profile > .profile_img > .img {
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
 }
 
-#section2 .profile > .profile_img > .img.img01 {
+#section2.section.show .profile > .profile_img > .img.img01 {
     transform: rotate(10deg) translate(-50%, -50%);
     top: 36%;
     left: 43%;
     transition: 1s;
-    z-index: 3;
+    z-index: 5;
 }
 
-#section2 .profile > .profile_img > .img.img02 {
+#section2.section.show .profile > .profile_img > .img.img02 {
     transform: rotate(7deg) translate(-50%, -50%);
     top: 58%;
     left: 38%;
@@ -222,14 +236,14 @@ p.half-highlight {
     z-index: 1;
 }
 
-#section2 .profile > .profile_img > .img.img03 {
+#section2.section.show .profile > .profile_img > .img.img03 {
     transform: rotate(5deg) translate(-50%, -50%);
     top: 60%;
     left: 58%;
     transition: 1s;
 }
 
-#section2 .profile > .profile_img > .img.img04 {
+#section2.section.show .profile > .profile_img > .img.img04 {
     transform: rotate(-8deg) translate(-50%, -50%);
     top: 38%;
     left: 72%;
@@ -237,13 +251,15 @@ p.half-highlight {
     z-index: 4;
 }
 
-#section2 .profile > .profile_img > .img.img05 {
+#section2.section.show .profile > .profile_img > .img.img05 {
     transform: rotate(-5deg) translate(-50%, -50%);
     top: 43%;
     left: 32%;
     transition: 1s;
     z-index: 2;
 }
+
+
 #section2 .profile > .profile_cnt > p.tit {
     font-size: 32px;
     /* font-family: 'Montserrat', sans-serif; */
