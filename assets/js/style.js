@@ -1,6 +1,13 @@
 $(document).ready(function() {
     // $(".skill_graph").addClass("active")
 
+
+    $('.toggle').click(function(){
+        $(this).toggleClass('active');
+        $(".slide_menu_wrap").toggleClass('show');
+    });
+
+
     document.getElementById("section1").classList.add("show");
 
     $("#section1 .title > h2.top").lettering();
@@ -223,6 +230,21 @@ function scrollProgress(){
     document.querySelectorAll(".port_mobile").forEach(item => {
         scrollTop > item.offsetTop ? item.classList.add("show") : item.classList.remove("show");
     });
+
+    // #section4 .port_mobile > .content
+
+
+    if (scrollTop > document.querySelectorAll(".port_mobile")[0].offsetTop) {
+        let offset1 = (scrollTop - document.querySelectorAll(".port_mobile")[0].offsetTop) * 0.1;
+
+        document.querySelectorAll("#section4 .port_mobile .mockup_img")[0].style.transform = "translateX("+ offset1 +"px)";
+    }
+
+    if (scrollTop > document.querySelectorAll(".port_mobile")[1].offsetTop) {
+        let offset1 = (scrollTop - document.querySelectorAll(".port_mobile")[1].offsetTop) * 0.1;
+
+        document.querySelectorAll("#section4 .port_mobile .mockup_img")[1].style.transform = "translateX("+ offset1 +"px)";
+    }
 
 }
 

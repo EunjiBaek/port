@@ -203,6 +203,8 @@ body::-webkit-scrollbar-track {
 
 
 .section > div > p {
+    width: 100%;
+    overflow: hidden;
     opacity: 0;
     transform: translateX(-300px);
     transition: all 1s .3s cubic-bezier(0, 0.66, 0.38, 1.01);
@@ -265,13 +267,6 @@ body::-webkit-scrollbar-track {
 
 
 /* web portfolio 패럴렉스 */
-/* .port_mobile > .mockup_img {
-    opacity: 0;
-    transition: all 1s .5s cubic-bezier(0, 0.66, 0.38, 1.01);
-}
-.port_mobile.show > .mockup_img {
-    opacity: 1;
-}
 
 .port_mobile > .content {
     opacity: 0;
@@ -281,7 +276,7 @@ body::-webkit-scrollbar-track {
 .port_mobile.show > .content {
     opacity: 1;
     transform: translateX(0);
-} */
+}
 
 
 .reveal > img,
