@@ -1,6 +1,11 @@
 $(document).ready(function() {
     // $(".skill_graph").addClass("active")
 
+    $("nav.slide_menu a").click(function(e){
+        $(".slide_menu_wrap").removeClass('show');
+        $('.toggle').removeClass("active");
+    });
+
 
     $('.toggle').click(function(){
         $(this).toggleClass('active');
@@ -24,17 +29,6 @@ $(document).ready(function() {
         delay: 1.5,
         y: '100%'
     }, 0.05);
-
-
-    $(".skill_graph span").each(function() {
-        $(this).animate({
-            "width": $(this).parent().attr("data-bar") + "%"
-        }, 1000);
-        $(this).append('<b>' + $(this).parent().attr("data-bar") + '%</b>');
-    });
-    setTimeout(function() {
-        $(".skill_graph span b").animate({"opacity":"1"},1000);
-    }, 2000);
 
 
     var swiper = new Swiper(".effectSwiper", {
@@ -217,7 +211,6 @@ function scrollProgress(){
     document.querySelectorAll("#section2_1.section .skills > div").forEach(item => {
         scrollTop > item.offsetTop ? item.classList.add("show") : item.classList.remove("show");
     });
-
 
 
     // web portfolio

@@ -91,7 +91,7 @@ nav.slide_menu a {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 35px;
+    font-size: 45px;
     color: #ddd;
     position: relative;
     margin-bottom: 50px;
@@ -203,6 +203,7 @@ nav.slide_menu a:hover::after {
     width: 1100px;
 }
 .nav > h1 {
+    display: inline-block;
     position: relative;
     padding-left: 40px;
     box-sizing: border-box;
@@ -494,6 +495,7 @@ p.half-highlight {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .skill_wrap > .list {
     width: 180px;
@@ -1211,16 +1213,71 @@ p.half-highlight {
 }
 
 
+
+
 @media (max-width: 1250px) {
+    .container {
+        width: 100%;
+    }
+    .nav > h1 {
+        padding-left: 25px;
+    }
     .util_menu {
         display: none;
     }
     .toggle {
         display: block;
     }
+    #section3 .portfolio_wrap.right {
+        flex-direction: column;
+    }
+    #section3 .portfolio_wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+    #section3 .portfolio_wrap > .content > .date,
+    #section3 .portfolio_wrap > .content p,
+    #section3 .portfolio_wrap > .content > .detail,
+    #section3 .portfolio_wrap > .content > .btn_wrap {
+        text-align: center;
+    }
+    #section3 .portfolio_wrap > .content > .port_kill, #section3 .portfolio_wrap > .content > .port_color {
+        justify-content: center;
+    }
+    #section3 .portfolio_wrap > .content {
+        width: 50%;
+    }
+    #section3 .portfolio_wrap > .mockup_img {
+        width: 100%;
+    }
+    #section3 .portfolio_wrap > .mockup_img > img {
+        max-width: 100%;
+        width: auto;
+    }
+}
+
+@media (max-width: 980px) {
+    #section2 .profile {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #section2 .profile > .profile_img,
+    #section2 .profile > .profile_cnt {
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
+    .value {
+        margin-top: 10px;
+    }
+    .section {
+        padding: 100px 0;
+    }
+    .section h1 {
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
     nav.slide_menu a,
     .slide_menu_wrap .slideMenu_close_btn > i {
         font-size: 25px;
@@ -1233,5 +1290,20 @@ p.half-highlight {
         line-height: 1.2em;
     }
 }
+
+
+
+@media (max-width: 595px) {
+    #section1 .title > h2 {
+        font-size: 40px;
+    }
+    #section1 .title > h2 > span {
+        font-size: 50px;
+    }
+    #section1 .text_wrap {
+        left: 20px;
+    }
+}
+
 
 

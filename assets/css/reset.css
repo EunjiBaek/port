@@ -198,10 +198,6 @@ body::-webkit-scrollbar-track {
     transform: translateX(0px);
 }
 
-
-
-
-
 .section > div > p {
     width: 100%;
     overflow: hidden;
