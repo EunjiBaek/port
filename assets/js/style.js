@@ -325,14 +325,14 @@ $(".number").each(function (i) {
           })
         );
     }
-  
+    
+
     // now let's animate numbers
     var valEl = $(this).find(".value");
     valEl.data("origVal", valEl.text());
     $(canvas).on("circle-animation-progress", function (e, progress) {
       valEl.text(parseInt(valEl.data("origVal") * progress) + "%");
     });
-
 
 });
   
