@@ -1,3 +1,17 @@
+//loading
+
+let Isloader = document.querySelector('.loading_wrap');
+
+function Isloading(){
+    setTimeout(function(){
+        Isloader.classList.add('active');
+    },2000);
+}
+Isloading();
+
+
+
+
 $(document).ready(function() {
     // $(".skill_graph").addClass("active")
 
@@ -48,9 +62,6 @@ $(document).ready(function() {
 });
 
 
-
-
-
 const cursor = document.querySelector(".cursor");
 const follower = document.querySelector(".cursor-follower");
 
@@ -68,6 +79,29 @@ window.addEventListener("mousemove", function(e){
         em.addEventListener("mouseleave", () => {
             cursor.classList.remove("active");
             follower.classList.remove("active");
+        });
+    });
+
+    document.querySelectorAll(".port_mobile").forEach(em => {
+        em.addEventListener("mouseenter", () => {
+            cursor.classList.add("active");
+            follower.classList.add("active");
+        });
+        em.addEventListener("mouseleave", () => {
+            cursor.classList.remove("active");
+            follower.classList.remove("active");
+        });
+    });
+
+
+    document.querySelectorAll(".portfolio_wrap").forEach(em => {
+        em.addEventListener("mouseenter", () => {
+            cursor.classList.add("show");
+            follower.classList.add("show");
+        });
+        em.addEventListener("mouseleave", () => {
+            cursor.classList.remove("show");
+            follower.classList.remove("show");
         });
     });
 
@@ -179,7 +213,6 @@ document.querySelectorAll(".util_menu ul li a").forEach(elem => {
 
 
 
-
 function scrollProgress(){
     let scrollTop = (document.documentElement.scrollTop || window.scrollY || window.pageYOffset) + window.innerHeight; 
     const reveal = document.querySelectorAll(".reveal");
@@ -208,8 +241,11 @@ function scrollProgress(){
 
 
     // about me skill
-    document.querySelectorAll("#section2_1.section .skills > div").forEach(item => {
+    let skillDiv = document.querySelectorAll("#section2_1.section .skills > div");
+
+    skillDiv.forEach(item => {
         scrollTop > item.offsetTop ? item.classList.add("show") : item.classList.remove("show");
+
     });
 
 
@@ -239,9 +275,14 @@ function scrollProgress(){
         document.querySelectorAll("#section4 .port_mobile .mockup_img")[1].style.transform = "translateX("+ offset1 +"px)";
     }
 
+
+    
+
 }
 
 window.addEventListener("scroll", scrollProgress);
+
+
 
 
 $(".number").each(function (i) {
@@ -335,7 +376,7 @@ $(".number").each(function (i) {
     });
 
 });
-  
+
 
 
 
