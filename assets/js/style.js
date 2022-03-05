@@ -92,7 +92,6 @@ window.addEventListener("mousemove", function(e){
         });
     });
 
-
     document.querySelectorAll(".portfolio_wrap").forEach(em => {
         em.addEventListener("mouseenter", () => {
             cursor.classList.add("show");
@@ -245,6 +244,10 @@ function scrollProgress(){
 
 
     document.querySelectorAll(".section").forEach((item, index) => {
+        scrollTop > item.offsetTop ? item.classList.add("show") : item.classList.remove("show");
+    });
+
+    document.querySelectorAll("#section2_1 .skills > div").forEach((item, index) => {
         scrollTop > item.offsetTop ? item.classList.add("show") : item.classList.remove("show");
     });
 

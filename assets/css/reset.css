@@ -177,32 +177,32 @@ body::-webkit-scrollbar-track {
 }
 
 
-#section2_1.section .skills > div > p {
+#section2_1 .skills > div > p {
     opacity: 0;
     transform: translateY(200px);
     transition: all 1s 0.1s cubic-bezier(0, 0.66, 0.38, 1.01);
 }
-#section2_1.section .skills > div.show > p {
+#section2_1 .skills > div.show > p {
     opacity: 1;
     transform: translateY(0);
 }
 
-#section2_1.section .skills > div > .skill_wrap {
+#section2_1 .skills > div > .skill_wrap {
     opacity: 0;
     transform: translateX(-200px);
     transition: all 1s 0.9s cubic-bezier(0, 0.66, 0.38, 1.01);
 }
-#section2_1.section .skills > div.show > .skill_wrap {
+#section2_1 .skills > div.show > .skill_wrap {
     opacity: 1;
     transform: translateX(0);
 }
 
-#section2_1.section .skills > div > .skill_content {
+#section2_1 .skills > div > .skill_content {
     opacity: 0;
     transform: translateX(-200px);
     transition: all 1s 0.9s cubic-bezier(0, 0.66, 0.38, 1.01);
 }
-#section2_1.section .skills > div.show > .skill_content {
+#section2_1 .skills > div.show > .skill_content {
     opacity: 1;
     transform: translateX(0px);
 }
