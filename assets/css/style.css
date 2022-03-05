@@ -1,7 +1,8 @@
 /* loading */
 
 .loading_wrap {width: 100%; height: 100vh; z-index: 5000;
-    display: flex;
+    /* display: flex; */
+    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -40,6 +41,70 @@
     font-family: 'Poppins';
     color: #ffffff;
 }
+
+
+/* info */
+.paraScroll {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 1000;
+    background: rgba(0,0,0,.4);
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 12px;
+    padding: 0px 20px;
+}
+
+
+
+/* paraDot */
+.paraDot {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    z-index: 1000;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.4);
+    padding: 20px 10px;
+    border-radius: 35px;
+}
+.paraDot li {
+    list-style: none;
+}
+.paraDot li a {
+    width: 20px; 
+    height: 20px;
+    display: block;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin: 8px 3px;
+    position: relative;
+    text-decoration: none;
+}
+.paraDot li a span {
+    position: absolute;
+    left: -105px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    color: #000;
+    display: block;
+    padding: 2px 15px;
+    border-radius: 30px;
+    opacity: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.paraDot li.active a {
+    background: #fff;
+}
+.paraDot li.active a span {
+    opacity: 1;
+}
+
 
 
 
@@ -265,8 +330,7 @@ nav.slide_menu a:hover::after {
     justify-content: center;
     font-size: 14px;
     color: #ffffff;
-    /* opacity: 0.5; */
-    opacity: 1;
+    opacity: 0.5;
     font-family: 'Montserrat', sans-serif;
 }
 .nav ul li.active > a {
@@ -459,6 +523,8 @@ p.half-highlight {
 
 #section2_1 {
     background-color: #000000;
+    padding: 150px 0;
+    box-sizing: border-box;
 }
 #section2_1 .skills > div:first-child {
     margin-bottom: 80px;
@@ -1319,6 +1385,10 @@ p.half-highlight {
         padding-left: 20px;
         padding-right: 20px;
     }
+    #section2_1 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     #section7 {
         padding: 100px 20px;
         box-sizing: border-box;
@@ -1399,6 +1469,9 @@ p.half-highlight {
 }
 
 @media (max-width: 768px) {
+    .paraDot {
+        display: none;
+    }
     .value {
         margin-top: 10px;
     }

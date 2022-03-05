@@ -1,5 +1,4 @@
 //loading
-
 let Isloader = document.querySelector('.loading_wrap');
 
 function Isloading(){
@@ -156,16 +155,17 @@ $detail_page_btn.forEach(function(elem) {
         let idx = Array.from($detail_page_btn).indexOf(e.currentTarget);
         $modal_body.innerHTML = "";
         if ( idx === 0) {
-            $modal_body.innerHTML = `<img src="./assets/img/publishing_detail/Kauction_live_detail.png" alt="">`;
+            $modal_body.innerHTML = `<img src="./assets/img/publishing_detail/Kauction_live_detail.png" alt="" style="box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.1);">`;
         } else if ( idx === 1) {
-            $modal_body.innerHTML = `<img src="./assets/img/publishing_detail/Kauction_renewal_detail.png" alt="">`
+            $modal_body.innerHTML = `<img src="./assets/img/publishing_detail/Kauction_renewal_detail.png" alt="" style="box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.1);">`;
+        } else if ( idx === 2) {
+            $modal_body.innerHTML = `<img src="./assets/img/publishing_detail/megabox_detail.png" alt="" style="box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.1);">`;
         } else {
-            $modal_body.innerHTML = `<img src="./assets/img/publishing_detail/megabox_detail.png" alt=""></img>`
+            $modal_body.innerHTML = `<img src="./assets/img/publishing_detail/nike_detail.png" alt="" style="box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.1);">`;
         }
 
     });
 })
-
 
 
 $modalbutton.forEach(function(elem){
@@ -199,6 +199,16 @@ window.addEventListener('click', (e) => {
     }
 });
 
+// 페이지 닷
+document.querySelectorAll(".paraDot ul li a").forEach(el => {
+    el.addEventListener("click", e => {
+        e.preventDefault();
+        document.querySelector(el.getAttribute("href")).scrollIntoView({
+            behavior: "smooth"
+        })
+    })
+});
+
 
 
 // 페럴럭스
@@ -214,7 +224,8 @@ document.querySelectorAll(".util_menu ul li a").forEach(elem => {
 
 
 function scrollProgress(){
-    let scrollTop = (document.documentElement.scrollTop || window.scrollY || window.pageYOffset) + window.innerHeight; 
+    let scrollTop = (document.documentElement.scrollTop || window.scrollY || window.pageYOffset) + window.innerHeight;
+
     const reveal = document.querySelectorAll(".reveal");
 
 
@@ -233,11 +244,33 @@ function scrollProgress(){
     })
 
 
-
     document.querySelectorAll(".section").forEach((item, index) => {
         scrollTop > item.offsetTop ? item.classList.add("show") : item.classList.remove("show");
-
     });
+
+
+    //메뉴
+    document.querySelectorAll(".section").forEach((item, index) => {
+
+        let scrollTop_nav = window.pageYOffset || document.documentElement.scrollTop || window.scrollY;
+
+        if( scrollTop_nav >= item.offsetTop){
+            document.querySelectorAll(".nav ul li").forEach(li => {
+                li.classList.remove("active");
+            });
+            document.querySelector(".nav ul li:nth-child("+(index+1)+")").classList.add("active");
+        }
+
+        if( scrollTop_nav >= item.offsetTop ){
+            document.querySelectorAll(".paraDot ul li").forEach(li => {
+                li.classList.remove("active");
+            });
+            document.querySelector(".paraDot ul li:nth-child("+(index+1)+")").classList.add("active");
+        }
+    })
+
+
+
 
 
     // about me skill
@@ -276,7 +309,8 @@ function scrollProgress(){
     }
 
 
-    
+    //info
+    document.querySelector(".paraScroll span").innerText = parseInt(scrollTop);
 
 }
 
