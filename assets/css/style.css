@@ -1,5 +1,4 @@
-/* loading */
-
+/* loading  화면*/
 .loading_wrap {width: 100%; height: 100vh; z-index: 5000;
     display: flex;
     justify-content: center;
