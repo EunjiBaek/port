@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-
-
     <!-- 웹폰트 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nanum+Gothic:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-
-    
     <!-- fontawesome -->
     <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
     />
     <!-- //fontawesome -->
     <!--css-->
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
@@ -37,1133 +48,1407 @@
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-
     <!-- 파비콘 -->
-    <link rel="shortcut icon" href="./assets/img/favicon/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" href="./assets/img/favicon/favicon_72.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="96x96" href="assets/icons/favicon_96.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/icons/favicon_144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="192x192" href="assets/icons/favicon_192.png" />
-    
+    <link rel="shortcut icon" href="./assets/img/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="./assets/img/favicon/favicon_72.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="96x96"
+      href="assets/icons/favicon_96.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="assets/icons/favicon_144.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="192x192"
+      href="assets/icons/favicon_192.png"
+    />
+
     <!-- 페이스북 메타 태그 -->
     <!-- <meta property="og:title" content="메가박스 사이트 만들기" />
     <meta property="og:url" content="https://github.com/webstoryboy/megabox2019" />
     <meta property="og:image" content="https://webstoryboy.github.io/megabox2019/mega.jpg" />
     <meta property="og:description" content="메가박스 사이트 따라하면서 배우는 튜토리얼입니다." /> -->
-   
+
     <!-- 트위터 메타 태그 -->
     <!-- <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="메가박스 사이트 만들기">
     <meta name="twitter:url" content="https://github.com/webstoryboy/megabox2019/">
     <meta name="twitter:image" content="https://webstoryboy.github.io/megabox2019/mega.jpg">
     <meta name="twitter:description" content="메가박스 사이트 따라하면서 배우는 튜토리얼입니다."> -->
-
-
-</head>
-<body onscroll="SetDivPosition()">
-
+  </head>
+  <body onscroll="SetDivPosition()">
     <div class="loading_wrap">
-        <ul>
-            <li class="item"></li>
-            <li class="item"></li>
-            <li class="item"></li>
-            <li class="item"></li>
-            <li class="item"></li>
-            <li class="item"></li>
-            <li class="item"></li>
-            <li class="item"></li>
-            <li class="item"></li>
-        </ul>
-        <span>Loading...</span>
+      <ul>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+      </ul>
+      <span>Loading...</span>
     </div>
-
 
     <!-- nav -->
     <nav class="paraDot">
-        <ul>
-            <li class="active"><a href="#section1"><span>section1</span></a></li>
-            <li><a href="#section2"><span>section2</span></a></li>
-            <li><a href="#section3"><span>section3</span></a></li>
-            <li><a href="#section4"><span>section4</span></a></li>
-            <li><a href="#section5"><span>section5</span></a></li>
-            <li><a href="#section6"><span>section6</span></a></li>
-        </ul>
+      <ul>
+        <li class="active">
+          <a href="#section1"><span>section1</span></a>
+        </li>
+        <li>
+          <a href="#section2"><span>section2</span></a>
+        </li>
+        <li>
+          <a href="#section3"><span>section3</span></a>
+        </li>
+        <li>
+          <a href="#section4"><span>section4</span></a>
+        </li>
+        <li>
+          <a href="#section5"><span>section5</span></a>
+        </li>
+        <li>
+          <a href="#section6"><span>section6</span></a>
+        </li>
+      </ul>
     </nav>
     <!-- //nav -->
 
-
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
-
 
     <!-- info -->
     <div class="paraScroll">scrollTop() : <span>0</span>px</div>
     <!-- //info -->
 
-
     <!--header-->
     <nav class="nav">
-        <h1><a href="#section1">EUNJI</a></h1>
-        <div class="util_menu">
-            <ul>
-                <li class="active"><a href="#section1">Home</a></li>
-                <li><a href="#section2">About</a></li>
-                <li><a href="#section3">Portfolio(web)</a></li>
-                <li><a href="#section4">Portfolio(mobile)</a></li>
-                <li><a href="#section5">Portfolio(design)</a></li>
-                <li><a href="#section6">Javascript Effect</a></li>
-            </ul>
-        </div> 
+      <h1><a href="#section1">EUNJI</a></h1>
+      <div class="util_menu">
+        <ul>
+          <li class="active"><a href="#section1">Home</a></li>
+          <li><a href="#section2">About</a></li>
+          <li><a href="#section3">Portfolio(web)</a></li>
+          <li><a href="#section4">Portfolio(mobile)</a></li>
+          <li><a href="#section5">Portfolio(design)</a></li>
+          <li><a href="#section6">Javascript Effect</a></li>
+        </ul>
+      </div>
     </nav>
     <!--//header-->
 
     <!--햄버거메뉴-->
-    <div class='toggle'>
-        <span></span>
-        <span></span>
-        <span></span>
+    <div class="toggle">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
     <!--//햄버거메뉴-->
 
-
     <!--슬라이드메뉴-->
     <div class="slide_menu_wrap">
-
-        <nav class="slide_menu">
-            <a href="#section1">
-                <span>HOME</span>
-            </a>
-            <a href="#section2">
-                <span>ABOUT</span>
-            </a>
-            <a href="#section3">
-                <span>portfolio(web)</span>
-            </a>
-            <a href="#section4">
-                <span>portfolio(mobile)</span>
-            </a>
-            <a href="#section5">
-                <span>portfolio(design)</span>
-            </a>
-            <a href="#section6">
-                <span>js effect</span>
-            </a>
-        </nav>
+      <nav class="slide_menu">
+        <a href="#section1">
+          <span>HOME</span>
+        </a>
+        <a href="#section2">
+          <span>ABOUT</span>
+        </a>
+        <a href="#section3">
+          <span>portfolio(web)</span>
+        </a>
+        <a href="#section4">
+          <span>portfolio(mobile)</span>
+        </a>
+        <a href="#section5">
+          <span>portfolio(design)</span>
+        </a>
+        <a href="#section6">
+          <span>js effect</span>
+        </a>
+      </nav>
     </div>
     <!--//슬라이드메뉴-->
 
-
-
     <section id="section1" class="section">
-
-        <div class="text_wrap">
-            <p>WEB PUBLISHER & FRONTEND PORTFOLIO</p>
-            <div class="title mouseCont">
-                <h2 class="top">welcome &nbsp; to &nbsp; my</h2>
-                <h2 class="bottom">portfolio</h2>
-            </div>
+      <div class="text_wrap">
+        <p>WEB PUBLISHER & FRONTEND PORTFOLIO</p>
+        <div class="title mouseCont">
+          <h2 class="top">welcome &nbsp; to &nbsp; my</h2>
+          <h2 class="bottom">portfolio</h2>
         </div>
+      </div>
     </section>
 
     <section id="section2" class="section">
-        <div class="container">
+      <div class="container">
+        <h1>ABOUT ME</h1>
 
-            <h1>ABOUT ME</h1>
+        <div class="profile">
+          <!--프로필내용-->
+          <div class="profile_cnt">
+            <p class="tit">
+              hello there,<br />
+              let me introduce myself
+            </p>
 
-            <div class="profile">
+            <p class="sub_tit">"프론트 엔드 개발자 백은지입니다"</p>
 
-                <!--프로필내용-->
-                <div class="profile_cnt">
-                    <p class="tit">hello there,<br />
-                    let me introduce myself
-                    </p>
+            <p class="content">
+              디자인 업무 경험을 토대로 아트 경매회사인 케이옥션 IT팀에
+              퍼블리셔로 입사하여 다양한 프로젝트를 통해서 ui/ux 디자인,
+              마크업등 업무를 수행하였습니다. 디자인 경력을 통해 디자이너와의
+              원활한 소통이 가능 하였고, 개발자들과의 소통을 위해 프론트엔드
+              개발까지 역량을 높혔습니다. 디자이너와 개발자 각자의 입장에서
+              업무를 효율적으로 이끌어 낼 수 있습니다.
+            </p>
+          </div>
+          <!--//프로필내용-->
 
-                    <p class="sub_tit">"프론트 엔드 개발자 백은지입니다"</p>
-
-                    <p class="content">
-                        디자인 업무 경험을 토대로 아트 경매회사인 케이옥션 IT팀에 퍼블리셔로 입사하여 다양한 프로젝트를 통해서 ui/ux 디자인, 마크업등 업무를 수행하였습니다. 디자인 경력을 통해 디자이너와의 원활한 소통이 가능 하였고, 개발자들과의 소통을 위해 프론트엔드 개발까지 역량을 높혔습니다. 디자이너와 개발자 각자의 입장에서 업무를 효율적으로 이끌어 낼 수 있습니다.
-                    </p>
-                </div>  
-                <!--//프로필내용-->
-
-
-                <!--프로필 이미지-->
-                <div class="profile_img">
-                    <div class="img img01">
-                        <img src="./assets/img/background/aboutme_img_01.jpg" alt="">
-                    </div>
-
-                    <div class="img img02">
-                        <img src="./assets/img/background/aboutme_img_02.jpg" alt="">
-                    </div>
-
-                    <div class="img img03">
-                        <img src="./assets/img/background/aboutme_img_03.jpg" alt="">
-                    </div>
-
-                    <div class="img img04">
-                        <img src="./assets/img/background/aboutme_img_04.jpg" alt="">
-                    </div>
-
-                    <div class="img img05">
-                        <img src="./assets/img/background/aboutme_img_05.jpg" alt="">
-                    </div>
-
-
-                    <div class="profileImg">
-                        <img src="./assets/img/background/aboutme_img_04.jpg" alt="">
-                    </div>
-                </div>
-                <!--//프로필 이미지-->
-
+          <!--프로필 이미지-->
+          <div class="profile_img">
+            <div class="img img01">
+              <img src="./assets/img/background/aboutme_img_01.jpg" alt="" />
             </div>
 
+            <div class="img img02">
+              <img src="./assets/img/background/aboutme_img_02.jpg" alt="" />
+            </div>
+
+            <div class="img img03">
+              <img src="./assets/img/background/aboutme_img_03.jpg" alt="" />
+            </div>
+
+            <div class="img img04">
+              <img src="./assets/img/background/aboutme_img_04.jpg" alt="" />
+            </div>
+
+            <div class="img img05">
+              <img src="./assets/img/background/aboutme_img_05.jpg" alt="" />
+            </div>
+
+            <div class="profileImg">
+              <img src="./assets/img/background/aboutme_img_04.jpg" alt="" />
+            </div>
+          </div>
+          <!--//프로필 이미지-->
         </div>
+      </div>
     </section>
 
     <section id="section2_1">
-        <div class="container">
-            <div class="skills">
+      <div class="container">
+        <div class="skills">
+          <div>
+            <p>Publishing & Frontend Develope</p>
 
-                <div>
-                    <p>Publishing & Frontend Develope</p>
-
-                    <div class="skill_wrap">
-
-                        <div class="list">
-                            <div class="number">
-                                <canvas class="canvas" width="100" height="100"></canvas>
-                                <div class="skill_svg">
-                                    <svg>
-                                        <circle class="circle" r="40%" cx="50%" cy="50%"></circle>
-                                        <circle class="circle" r="36%" cx="50%" cy="50%"></circle>
-                                        <circle class="circle" r="25%" cx="50%" cy="50%"></circle>
-                                    </svg>
-                                </div>
-                                <div class="ctn_wrap">
-                                    <div class="value" data-percent="0.95">95</div>
-                                    <div class="skill_tit">
-                                        HTML
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="list">
-                            <div class="number">
-                                <canvas class="canvas" width="100" height="100"></canvas>
-                                <div class="skill_svg">
-                                    <svg>
-                                        <circle class="circle_t" r="27%" cx="35%" cy="36%"></circle>
-                                        <circle class="circle_b" r="27%" cx="65%" cy="64%"></circle>
-                                    </svg>
-                                </div>
-                                <div class="ctn_wrap">
-                                    <div class="value" data-percent="0.95">95</div>
-                                    <div class="skill_tit">
-                                        CSS
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="list">
-                            <div class="number">
-                                <canvas class="canvas" width="100" height="100"></canvas>
-                                <div class="skill_svg">
-                                    <svg>
-                                        <circle class="circle" r="40%" cx="50%" cy="50%"></circle>
-                                        <circle class="circle_h1" r="15%" cx="50%" cy="50%"></circle>
-                                        <circle class="circle_h2" r="5%" cx="50%" cy="50%"></circle>
-                                    </svg>
-                                </div>
-                                <div class="ctn_wrap">
-                                    <div class="value" data-percent="0.90">90</div>
-                                    <div class="skill_tit">
-                                        JQUERY
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="list">
-                            <div class="number">
-                                <canvas class="canvas" width="100" height="100"></canvas>
-                                <div class="skill_svg">
-                                    <svg>
-                                        <circle class="circle_1" r="25%" cx="50%" cy="33%"></circle>
-                                        <circle class="circle_2" r="25%" cx="35%" cy="67%"></circle>
-                                        <circle class="circle_3" r="25%" cx="65%" cy="67%"></circle>
-                                    </svg>
-                                </div>
-                                <div class="ctn_wrap">
-                                    <div class="value" data-percent="0.85">85</div>
-                                    <div class="skill_tit">
-                                        JAVASCRIPT
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="list">
-                            <div class="number">
-                                <canvas class="canvas" width="100" height="100"></canvas>
-                                <div class="skill_svg">
-                                    <svg>
-                                        <circle class="circle" r="40%" cx="50%" cy="50%"></circle>
-                                        <circle class="circle_s" r="36%" cx="50%" cy="50%"></circle>
-                                        <circle class="circle_s" r="17%" cx="50%" cy="50%"></circle>
-                                        <circle class="circle_ss" r="13%" cx="50%" cy="50%"></circle>
-                                    </svg>
-                                </div>
-                                <div class="ctn_wrap">
-                                    <div class="value" data-percent="0.85">85</div>
-                                    <div class="skill_tit">
-                                        REACT
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="skill_content">
-                        <p>현대적인 트렌드에 맞춘 기능 구현이 가능하며, 웹접근성, 웹표준성을 고려한 홈페이지 제작이 가능합니다. 퍼블리싱 뿐만 아니라 프론트엔드 개발 업무까지 가능합니다. 실제 API를 웹페이지에 적용하고 백엔드와 연동되는 웹페이지 구현 가능하고, 자바스크립트 라이브러리인 리액트로 싱글페이지 어플리케이션 제작 가능합니다.</p>
-                    </div>
+            <div class="skill_wrap">
+              <div class="list">
+                <div class="number">
+                  <canvas class="canvas" width="100" height="100"></canvas>
+                  <div class="skill_svg">
+                    <svg>
+                      <circle class="circle" r="40%" cx="50%" cy="50%"></circle>
+                      <circle class="circle" r="36%" cx="50%" cy="50%"></circle>
+                      <circle class="circle" r="25%" cx="50%" cy="50%"></circle>
+                    </svg>
+                  </div>
+                  <div class="ctn_wrap">
+                    <div class="value" data-percent="0.95">95</div>
+                    <div class="skill_tit">HTML</div>
+                  </div>
                 </div>
+              </div>
 
-                <div>
-                    <p>Design Skill</p>
-
-
-                    <div class="skill_wrap design_skill">
-
-                        <div class="list">
-                            <div class="number">
-                                <canvas class="canvas" width="100" height="100"></canvas>
-                                <div class="skill_svg">
-                                    <svg>
-                                        <circle class="circle" r="40%" cx="50%" cy="50%"></circle>
-                                        <circle class="circle_h1" r="15%" cx="50%" cy="50%"></circle>
-                                        <circle class="circle_h2" r="5%" cx="50%" cy="50%"></circle>
-                                    </svg>
-                                </div>
-                                <div class="ctn_wrap">
-                                    <div class="value" data-percent="0.95">90</div>
-                                    <div class="skill_tit">
-                                        PHOTOSHOP
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="list">
-                            <div class="number">
-                                <canvas class="canvas" width="100" height="100"></canvas>
-                                <div class="skill_svg">
-                                    <svg>
-                                        <circle class="circle" r="40%" cx="50%" cy="50%"></circle>
-                                        <circle class="circle" r="36%" cx="50%" cy="50%"></circle>
-                                        <circle class="circle" r="25%" cx="50%" cy="50%"></circle>
-                                    </svg>
-                                </div>
-                                <div class="ctn_wrap">
-                                    <div class="value" data-percent="0.95">85</div>
-                                    <div class="skill_tit">
-                                        ILLUSTRATOR
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="list">
-                            <div class="number">
-                                <canvas class="canvas" width="100" height="100"></canvas>
-                                <div class="skill_svg">
-                                    <svg>
-                                        <circle class="circle" r="40%" cx="50%" cy="50%"></circle>
-                                        <circle class="circle_s" r="36%" cx="50%" cy="50%"></circle>
-                                        <circle class="circle_s" r="17%" cx="50%" cy="50%"></circle>
-                                        <circle class="circle_ss" r="13%" cx="50%" cy="50%"></circle>
-                                    </svg>
-                                </div>
-                                <div class="ctn_wrap">
-                                    <div class="value" data-percent="0.95">60</div>
-                                    <div class="skill_tit">
-                                        FIGMA
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="skill_content">
-                        <p>디자인의 이해도가 높으며, 그 경험을 살려 현 회사에서 디자이너를 도와 ui/ux 디자인을ㅇ 적극 지원/제안 하였습니다. 디자인 경험이 있어 새로운 tool에 대한 이해가 빠르고 적응력도 빠릅니다. 디자이너와의 소통도 다른 사람들보다 더 쉽고 원활하게 할 수 있는것이 강점이라고 생각합니다.</p>
-                    </div>
+              <div class="list">
+                <div class="number">
+                  <canvas class="canvas" width="100" height="100"></canvas>
+                  <div class="skill_svg">
+                    <svg>
+                      <circle
+                        class="circle_t"
+                        r="27%"
+                        cx="35%"
+                        cy="36%"
+                      ></circle>
+                      <circle
+                        class="circle_b"
+                        r="27%"
+                        cx="65%"
+                        cy="64%"
+                      ></circle>
+                    </svg>
+                  </div>
+                  <div class="ctn_wrap">
+                    <div class="value" data-percent="0.95">95</div>
+                    <div class="skill_tit">CSS</div>
+                  </div>
                 </div>
-                
+              </div>
 
+              <div class="list">
+                <div class="number">
+                  <canvas class="canvas" width="100" height="100"></canvas>
+                  <div class="skill_svg">
+                    <svg>
+                      <circle class="circle" r="40%" cx="50%" cy="50%"></circle>
+                      <circle
+                        class="circle_h1"
+                        r="15%"
+                        cx="50%"
+                        cy="50%"
+                      ></circle>
+                      <circle
+                        class="circle_h2"
+                        r="5%"
+                        cx="50%"
+                        cy="50%"
+                      ></circle>
+                    </svg>
+                  </div>
+                  <div class="ctn_wrap">
+                    <div class="value" data-percent="0.90">90</div>
+                    <div class="skill_tit">JQUERY</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="list">
+                <div class="number">
+                  <canvas class="canvas" width="100" height="100"></canvas>
+                  <div class="skill_svg">
+                    <svg>
+                      <circle
+                        class="circle_1"
+                        r="25%"
+                        cx="50%"
+                        cy="33%"
+                      ></circle>
+                      <circle
+                        class="circle_2"
+                        r="25%"
+                        cx="35%"
+                        cy="67%"
+                      ></circle>
+                      <circle
+                        class="circle_3"
+                        r="25%"
+                        cx="65%"
+                        cy="67%"
+                      ></circle>
+                    </svg>
+                  </div>
+                  <div class="ctn_wrap">
+                    <div class="value" data-percent="0.85">85</div>
+                    <div class="skill_tit">JAVASCRIPT</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="list">
+                <div class="number">
+                  <canvas class="canvas" width="100" height="100"></canvas>
+                  <div class="skill_svg">
+                    <svg>
+                      <circle class="circle" r="40%" cx="50%" cy="50%"></circle>
+                      <circle
+                        class="circle_s"
+                        r="36%"
+                        cx="50%"
+                        cy="50%"
+                      ></circle>
+                      <circle
+                        class="circle_s"
+                        r="17%"
+                        cx="50%"
+                        cy="50%"
+                      ></circle>
+                      <circle
+                        class="circle_ss"
+                        r="13%"
+                        cx="50%"
+                        cy="50%"
+                      ></circle>
+                    </svg>
+                  </div>
+                  <div class="ctn_wrap">
+                    <div class="value" data-percent="0.85">85</div>
+                    <div class="skill_tit">REACT</div>
+                  </div>
+                </div>
+              </div>
             </div>
+
+            <div class="skill_content">
+              <p>
+                현대적인 트렌드에 맞춘 기능 구현이 가능하며, 웹접근성,
+                웹표준성을 고려한 홈페이지 제작이 가능합니다. 퍼블리싱 뿐만
+                아니라 프론트엔드 개발 업무까지 가능합니다. 실제 API를
+                웹페이지에 적용하고 백엔드와 연동되는 웹페이지 구현 가능하고,
+                자바스크립트 라이브러리인 리액트로 싱글페이지 어플리케이션 제작
+                가능합니다.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <p>Design Skill</p>
+
+            <div class="skill_wrap design_skill">
+              <div class="list">
+                <div class="number">
+                  <canvas class="canvas" width="100" height="100"></canvas>
+                  <div class="skill_svg">
+                    <svg>
+                      <circle class="circle" r="40%" cx="50%" cy="50%"></circle>
+                      <circle
+                        class="circle_h1"
+                        r="15%"
+                        cx="50%"
+                        cy="50%"
+                      ></circle>
+                      <circle
+                        class="circle_h2"
+                        r="5%"
+                        cx="50%"
+                        cy="50%"
+                      ></circle>
+                    </svg>
+                  </div>
+                  <div class="ctn_wrap">
+                    <div class="value" data-percent="0.95">90</div>
+                    <div class="skill_tit">PHOTOSHOP</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="list">
+                <div class="number">
+                  <canvas class="canvas" width="100" height="100"></canvas>
+                  <div class="skill_svg">
+                    <svg>
+                      <circle class="circle" r="40%" cx="50%" cy="50%"></circle>
+                      <circle class="circle" r="36%" cx="50%" cy="50%"></circle>
+                      <circle class="circle" r="25%" cx="50%" cy="50%"></circle>
+                    </svg>
+                  </div>
+                  <div class="ctn_wrap">
+                    <div class="value" data-percent="0.95">85</div>
+                    <div class="skill_tit">ILLUSTRATOR</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="list">
+                <div class="number">
+                  <canvas class="canvas" width="100" height="100"></canvas>
+                  <div class="skill_svg">
+                    <svg>
+                      <circle class="circle" r="40%" cx="50%" cy="50%"></circle>
+                      <circle
+                        class="circle_s"
+                        r="36%"
+                        cx="50%"
+                        cy="50%"
+                      ></circle>
+                      <circle
+                        class="circle_s"
+                        r="17%"
+                        cx="50%"
+                        cy="50%"
+                      ></circle>
+                      <circle
+                        class="circle_ss"
+                        r="13%"
+                        cx="50%"
+                        cy="50%"
+                      ></circle>
+                    </svg>
+                  </div>
+                  <div class="ctn_wrap">
+                    <div class="value" data-percent="0.95">60</div>
+                    <div class="skill_tit">FIGMA</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill_content">
+              <p>
+                디자인의 이해도가 높으며, 그 경험을 살려 현 회사에서 디자이너를
+                도와 ui/ux 디자인을ㅇ 적극 지원/제안 하였습니다. 디자인 경험이
+                있어 새로운 tool에 대한 이해가 빠르고 적응력도 빠릅니다.
+                디자이너와의 소통도 다른 사람들보다 더 쉽고 원활하게 할 수
+                있는것이 강점이라고 생각합니다.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="section3" class="section portfolio">
+      <div class="container">
+        <h1>
+          Portfolio
+          <br />
+          (web)
+        </h1>
+        <p>HTML, CSS, JS, React, Vue를 활용한 웹 포트폴리오</p>
 
-        <div class="container">
-            <h1>
-                Portfolio
-                <br/>
-                (web)
-            </h1>
-            <p>HTML, CSS, JS, React를 활용한 웹 포트폴리오</p>
-            
-            <div class="portfolio_wrap">
+        <div class="portfolio_wrap right">
+          <div class="mockup_img">
+            <img src="./assets/img/publishing/woodaum_homepage.png" alt="" />
+          </div>
 
-                <div class="mockup_img">
-                    <img src="./assets/img/publishing/kauction_livepage.png" alt="">
-                </div>
+          <div class="content">
+            <div class="date">2022.8.01 ~ 2022.9.01</div>
 
-                <div class="content">
-                    <div class="date">2020.9.1 ~ 2021.6.30</div>
-
-                    <div class="tit">
-                        <p><span>K Auction</span> live page</p>
-                    </div>
-
-                    <div class="detail">기존의 문제점을 보완하여 사용자에의 편의성을 고려한 ui/ux를 구성하여 제작한 페이지이며, 자바스크립트 라이브러리인 리액트를 사용하여 성능개선, 관리가 쉽고 용이하도록 제작하였습니다.</div>
-
-                    <div class="port_kill">
-                        <strong>skill</strong> 
-                        Html, Css, Javascript, React
-                    </div>
-                    <div class="port_color">
-                        <strong>color</strong>
-                         <ul>
-                             <li style="background-color: #061839;"></li>
-                             <li style="background-color: #E02020;"></li>
-                             <li style="background-color: #eeeeee;"></li>
-                         </ul>
-                    </div>
-
-                    <div class="btn_wrap">
-                        <a href="#" class="cta detail_page_btn" data-header="상세페이지" data-value="케이옥션 라이브경매 REACT 프로젝트" >
-                            <span>detail page</span>
-                            <svg width="13px" height="10px" viewBox="0 0 13 10">
-                              <path d="M1,5 L11,5"></path>
-                              <polyline points="8 1 12 5 8 9"></polyline>
-                            </svg>
-                          </a>
-
-                          <a href="https://eunjibaek.github.io/kauctionlive-project/" class="cta" target="_blank">
-                            <span>view siste</span>
-                            <svg width="13px" height="10px" viewBox="0 0 13 10">
-                              <path d="M1,5 L11,5"></path>
-                              <polyline points="8 1 12 5 8 9"></polyline>
-                            </svg>
-                          </a>
-                    </div>
-
-                
-                </div>
+            <div class="tit">
+              <p><span>Woodaum</span> Homepage</p>
             </div>
 
-            <div class="portfolio_wrap right">
-                <div class="mockup_img">
-                    <img src="./assets/img/publishing/kauction_hompage.png" alt=""> 
-                </div>
-
-                <div class="content">
-                    <div class="date">2020.9.1 ~ 2021.6.30</div>
-
-                    <div class="tit">
-                        <p><span>k auction</span> renewal</p>
-                    </div>
-
-                    <div class="detail">리뉴얼을 목적으로 한 프로젝트이며 기존의 디자인보다 통일성 있고 사용자의 편의성을 고려하여 제작한 페이지입니다.</div>
-
-                    <div class="port_kill">
-                        <strong>skill</strong> 
-                        Html, Css, Javascript
-                    </div>
-                    <div class="port_color">
-                        <strong>color</strong>
-                         <ul>
-                             <li style="background-color: #061839;"></li>
-                             <li style="background-color: #F24F06;"></li>
-                             <li style="background-color: #eeeeee;"></li>
-                         </ul>
-                    </div>
-
-                    <div class="btn_wrap">
-                        <a href="#" class="cta detail_page_btn" data-header="상세페이지" data-value="케이옥션 리뉴얼 프로젝트">
-                            <span>detail page</span>
-                            <svg width="13px" height="10px" viewBox="0 0 13 10">
-                              <path d="M1,5 L11,5"></path>
-                              <polyline points="8 1 12 5 8 9"></polyline>
-                            </svg>
-                          </a>
-
-                          <a href="https://www.k-auction.com/" class="cta" target="_black">
-                            <span>view site</span>
-                            <svg width="13px" height="10px" viewBox="0 0 13 10">
-                              <path d="M1,5 L11,5"></path>
-                              <polyline points="8 1 12 5 8 9"></polyline>
-                            </svg>
-                          </a>
-                    </div>
-                
-                </div>
+            <div class="detail">
+              프랜차이즈 우다움홈페이지로 vue를 활용한 SPA홈페이지로 다국어
+              처리작업까지 하였습니다.
             </div>
 
-            <div class="portfolio_wrap">
-                <div class="mockup_img">
-                    <img src="./assets/img/publishing/magabox_page.png" alt="">
-                </div>
-
-                <div class="content">
-                    <div class="date">2020.6.1 ~ 2020.6.30</div>
-
-                    <div class="tit">
-                        <p><span>MEGA BOX</span> page</p>
-                    </div>
-
-                    <div class="detail">웹접근성, 웹표준, 크로스브라우징을 고려하여 제작한 메가박스 홈페이지입니다. 미디어쿼리를 이용하여 데스크탑, 태블릿, 모바일에서도 문제없이 홈페이지를 이용할 수 있도록 제작하였습니다.</div>
-
-                    <div class="port_kill">
-                        <strong>skill</strong> 
-                        Html, Css, Javascript
-                    </div>
-                    <div class="port_color">
-                        <strong>color</strong>
-                         <ul>
-                             <li style="background-color: #3A156A;"></li>
-                             <li style="background-color: #666666;"></li>
-                         </ul>
-                    </div>
-
-                    <div class="btn_wrap">
-                        <a href="#" class="cta detail_page_btn" data-header="상세페이지" data-value="메가박스 홈페이지" >
-                            <span>detail page</span>
-                            <svg width="13px" height="10px" viewBox="0 0 13 10">
-                              <path d="M1,5 L11,5"></path>
-                              <polyline points="8 1 12 5 8 9"></polyline>
-                            </svg>
-                          </a>
-
-                          <a href="./site/megabox/index.html" class="cta" target="_black">
-                            <span>view site</span>
-                            <svg width="13px" height="10px" viewBox="0 0 13 10">
-                              <path d="M1,5 L11,5"></path>
-                              <polyline points="8 1 12 5 8 9"></polyline>
-                            </svg>
-                          </a>
-                    </div>
-                
-                </div>
+            <div class="port_kill">
+              <strong>skill</strong>
+              Html, Css, Javascript, Vue
+            </div>
+            <div class="port_color">
+              <strong>color</strong>
+              <ul>
+                <li style="background-color: #061839"></li>
+                <li style="background-color: #b98947"></li>
+                <li style="background-color: #eeeeee"></li>
+              </ul>
             </div>
 
-            <div class="portfolio_wrap right">
-                <div class="mockup_img">
-                    <img src="./assets/img/publishing/nike_page.png" alt="">
-                </div>
+            <div class="btn_wrap">
+              <!-- <a
+                href="#"
+                class="cta detail_page_btn"
+                data-header="상세페이지"
+                data-value="케이옥션 리뉴얼 프로젝트"
+              >
+                <span>detail page</span>
+                <svg width="13px" height="10px" viewBox="0 0 13 10">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </a> -->
 
-                <div class="content">
-                    <div class="date">2020.6.1 ~ 2020.6.30</div>
-
-                    <div class="tit">
-                        <p><span>Nike</span> main page</p>
-                    </div>
-
-                    <div class="detail">비디오 태그와 다양한 효과를 활용한 나이키 메인페이지입니다.</div>
-
-                    <div class="port_kill">
-                        <strong>skill</strong> 
-                        Html, Css, Javascript
-                    </div>
-                    <div class="port_color">
-                        <strong>color</strong>
-                         <ul>
-                             <li style="background-color: #779F27;"></li>
-                             <li style="background-color: #333333;"></li>
-                    
-                         </ul>
-                    </div>
-
-                    <div class="btn_wrap">
-                        <a href="#" class="cta detail_page_btn">
-                            <span>detail page</span>
-                            <svg width="13px" height="10px" viewBox="0 0 13 10">
-                              <path d="M1,5 L11,5"></path>
-                              <polyline points="8 1 12 5 8 9"></polyline>
-                            </svg>
-                          </a>
-
-                          <a href="./site/Nike/index.html" class="cta" target="_blank">
-                            <span>view site</span>
-                            <svg width="13px" height="10px" viewBox="0 0 13 10">
-                              <path d="M1,5 L11,5"></path>
-                              <polyline points="8 1 12 5 8 9"></polyline>
-                            </svg>
-                          </a>
-                    </div>
-                
-                </div>
+              <a href="https://woodaum.com/" class="cta" target="_black">
+                <span>view site</span>
+                <svg width="13px" height="10px" viewBox="0 0 13 10">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </a>
             </div>
-
+          </div>
         </div>
+
+        <div class="portfolio_wrap">
+          <div class="mockup_img">
+            <img src="./assets/img/publishing/kauction_livepage.png" alt="" />
+          </div>
+
+          <div class="content">
+            <div class="date">2020.9.1 ~ 2021.6.30</div>
+
+            <div class="tit">
+              <p><span>K Auction</span> live page</p>
+            </div>
+
+            <div class="detail">
+              기존의 문제점을 보완하여 사용자에의 편의성을 고려한 ui/ux를
+              구성하여 제작한 페이지이며, 자바스크립트 라이브러리인 리액트를
+              사용하여 성능개선, 관리가 쉽고 용이하도록 제작하였습니다.
+            </div>
+
+            <div class="port_kill">
+              <strong>skill</strong>
+              Html, Css, Javascript, React
+            </div>
+            <div class="port_color">
+              <strong>color</strong>
+              <ul>
+                <li style="background-color: #061839"></li>
+                <li style="background-color: #e02020"></li>
+                <li style="background-color: #eeeeee"></li>
+              </ul>
+            </div>
+
+            <div class="btn_wrap">
+              <a
+                href="#"
+                class="cta detail_page_btn"
+                data-header="상세페이지"
+                data-value="케이옥션 라이브경매 REACT 프로젝트"
+              >
+                <span>detail page</span>
+                <svg width="13px" height="10px" viewBox="0 0 13 10">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </a>
+
+              <a
+                href="https://eunjibaek.github.io/kauctionlive-project/"
+                class="cta"
+                target="_blank"
+              >
+                <span>view siste</span>
+                <svg width="13px" height="10px" viewBox="0 0 13 10">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio_wrap right">
+          <div class="mockup_img">
+            <img src="./assets/img/publishing/kauction_hompage.png" alt="" />
+          </div>
+
+          <div class="content">
+            <div class="date">2020.9.1 ~ 2021.6.30</div>
+
+            <div class="tit">
+              <p><span>k auction</span> renewal</p>
+            </div>
+
+            <div class="detail">
+              리뉴얼을 목적으로 한 프로젝트이며 기존의 디자인보다 통일성 있고
+              사용자의 편의성을 고려하여 제작한 페이지입니다.
+            </div>
+
+            <div class="port_kill">
+              <strong>skill</strong>
+              Html, Css, Javascript
+            </div>
+            <div class="port_color">
+              <strong>color</strong>
+              <ul>
+                <li style="background-color: #061839"></li>
+                <li style="background-color: #f24f06"></li>
+                <li style="background-color: #eeeeee"></li>
+              </ul>
+            </div>
+
+            <div class="btn_wrap">
+              <a
+                href="#"
+                class="cta detail_page_btn"
+                data-header="상세페이지"
+                data-value="케이옥션 리뉴얼 프로젝트"
+              >
+                <span>detail page</span>
+                <svg width="13px" height="10px" viewBox="0 0 13 10">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </a>
+
+              <a href="https://www.k-auction.com/" class="cta" target="_black">
+                <span>view site</span>
+                <svg width="13px" height="10px" viewBox="0 0 13 10">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio_wrap">
+          <div class="mockup_img">
+            <img src="./assets/img/publishing/magabox_page.png" alt="" />
+          </div>
+
+          <div class="content">
+            <div class="date">2020.6.1 ~ 2020.6.30</div>
+
+            <div class="tit">
+              <p><span>MEGA BOX</span> page</p>
+            </div>
+
+            <div class="detail">
+              웹접근성, 웹표준, 크로스브라우징을 고려하여 제작한 메가박스
+              홈페이지입니다. 미디어쿼리를 이용하여 데스크탑, 태블릿,
+              모바일에서도 문제없이 홈페이지를 이용할 수 있도록 제작하였습니다.
+            </div>
+
+            <div class="port_kill">
+              <strong>skill</strong>
+              Html, Css, Javascript
+            </div>
+            <div class="port_color">
+              <strong>color</strong>
+              <ul>
+                <li style="background-color: #3a156a"></li>
+                <li style="background-color: #666666"></li>
+              </ul>
+            </div>
+
+            <div class="btn_wrap">
+              <a
+                href="#"
+                class="cta detail_page_btn"
+                data-header="상세페이지"
+                data-value="메가박스 홈페이지"
+              >
+                <span>detail page</span>
+                <svg width="13px" height="10px" viewBox="0 0 13 10">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </a>
+
+              <a href="./site/megabox/index.html" class="cta" target="_black">
+                <span>view site</span>
+                <svg width="13px" height="10px" viewBox="0 0 13 10">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio_wrap right">
+          <div class="mockup_img">
+            <img src="./assets/img/publishing/nike_page.png" alt="" />
+          </div>
+
+          <div class="content">
+            <div class="date">2020.6.1 ~ 2020.6.30</div>
+
+            <div class="tit">
+              <p><span>Nike</span> main page</p>
+            </div>
+
+            <div class="detail">
+              비디오 태그와 다양한 효과를 활용한 나이키 메인페이지입니다.
+            </div>
+
+            <div class="port_kill">
+              <strong>skill</strong>
+              Html, Css, Javascript
+            </div>
+            <div class="port_color">
+              <strong>color</strong>
+              <ul>
+                <li style="background-color: #779f27"></li>
+                <li style="background-color: #333333"></li>
+              </ul>
+            </div>
+
+            <div class="btn_wrap">
+              <a href="#" class="cta detail_page_btn">
+                <span>detail page</span>
+                <svg width="13px" height="10px" viewBox="0 0 13 10">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </a>
+
+              <a href="./site/Nike/index.html" class="cta" target="_blank">
+                <span>view site</span>
+                <svg width="13px" height="10px" viewBox="0 0 13 10">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="section4" class="section">
-        <div class="container">
-            <h1>Portfolio
-                <br/>
-                (mobile)
-            </h1>
-            <p>HTML, CSS, JS, React를 활용한 웹 포트폴리오</p>
+      <div class="container">
+        <h1>
+          Portfolio
+          <br />
+          (mobile)
+        </h1>
+        <p>HTML, CSS, JS, React를 활용한 웹 포트폴리오</p>
+      </div>
+
+      <div class="port_mobile">
+        <div class="mockup_img">
+          <div class="list">
+            <img src="./assets/img/publishing/kacution_mobile_02.png" alt="" />
+          </div>
+
+          <div class="list">
+            <img src="./assets/img/publishing/kacution_mobile_01.png" alt="" />
+          </div>
+
+          <div class="list">
+            <img src="./assets/img/publishing/kacution_mobile_03.png" alt="" />
+          </div>
+
+          <div class="list">
+            <img src="./assets/img/publishing/kacution_mobile_02.png" alt="" />
+          </div>
+
+          <div class="list">
+            <img src="./assets/img/publishing/kacution_mobile_01.png" alt="" />
+          </div>
+
+          <div class="list">
+            <img src="./assets/img/publishing/kacution_mobile_03.png" alt="" />
+          </div>
+
+          <div class="list">
+            <img src="./assets/img/publishing/kacution_mobile_01.png" alt="" />
+          </div>
+
+          <div class="list">
+            <img src="./assets/img/publishing/kacution_mobile_02.png" alt="" />
+          </div>
+
+          <div class="list">
+            <img src="./assets/img/publishing/kacution_mobile_03.png" alt="" />
+          </div>
+
+          <div class="list">
+            <img src="./assets/img/publishing/kacution_mobile_01.png" alt="" />
+          </div>
+
+          <div class="list">
+            <img src="./assets/img/publishing/kacution_mobile_02.png" alt="" />
+          </div>
+
+          <div class="list">
+            <img src="./assets/img/publishing/kacution_mobile_03.png" alt="" />
+          </div>
         </div>
 
-        <div class="port_mobile">
-            <div class="mockup_img">
-                <div class="list">
-                    <img src="./assets/img/publishing/kacution_mobile_02.png" alt="">
-                </div>
+        <div class="content">
+          <div class="date">2020.9.1 ~ 2021.6.1</div>
 
-                <div class="list">
-                    <img src="./assets/img/publishing/kacution_mobile_01.png" alt="">
-                </div>
+          <div class="tit">
+            <p><span>k auction</span> mobile page</p>
+          </div>
 
-                <div class="list">
-                    <img src="./assets/img/publishing/kacution_mobile_03.png" alt="">
-                </div>
+          <div class="detail">
+            리뉴얼 프로젝트이며 모바일 ui/ux를 새롭게 구성하였습니다.
+          </div>
 
-                <div class="list">
-                    <img src="./assets/img/publishing/kacution_mobile_02.png" alt="">
-                </div>
+          <div class="port_kill">
+            <strong>skill</strong>
+            Html, Css, Javascript
+          </div>
+          <div class="port_color">
+            <strong>color</strong>
+            <ul>
+              <li style="background-color: #061839"></li>
+              <li style="background-color: #f24f06"></li>
+              <li style="background-color: #eeeeee"></li>
+            </ul>
+          </div>
 
-                <div class="list">
-                    <img src="./assets/img/publishing/kacution_mobile_01.png" alt="">
-                </div>
+          <div class="btn_wrap">
+            <a href="https://www.k-auction.com/" class="cta" target="_blank">
+              <span>detail page</span>
+              <svg width="13px" height="10px" viewBox="0 0 13 10">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
 
-                <div class="list">
-                    <img src="./assets/img/publishing/kacution_mobile_03.png" alt="">
-                </div>
+      <div class="port_mobile">
+        <div class="mockup_img">
+          <div class="list">
+            <img src="./assets/img/publishing/sosangso_mobile_02.png" alt="" />
+          </div>
 
-                <div class="list">
-                    <img src="./assets/img/publishing/kacution_mobile_01.png" alt="">
-                </div>
+          <div class="list">
+            <img src="./assets/img/publishing/sosangso_mobile_01.png" alt="" />
+          </div>
 
-                <div class="list">
-                    <img src="./assets/img/publishing/kacution_mobile_02.png" alt="">
-                </div>
+          <div class="list">
+            <img src="./assets/img/publishing/sosangso_mobile_03.png" alt="" />
+          </div>
 
-                <div class="list">
-                    <img src="./assets/img/publishing/kacution_mobile_03.png" alt="">
-                </div>
+          <div class="list">
+            <img src="./assets/img/publishing/sosangso_mobile_02.png" alt="" />
+          </div>
 
-                <div class="list">
-                    <img src="./assets/img/publishing/kacution_mobile_01.png" alt="">
-                </div>
+          <div class="list">
+            <img src="./assets/img/publishing/sosangso_mobile_01.png" alt="" />
+          </div>
 
-                <div class="list">
-                    <img src="./assets/img/publishing/kacution_mobile_02.png" alt="">
-                </div>
+          <div class="list">
+            <img src="./assets/img/publishing/sosangso_mobile_03.png" alt="" />
+          </div>
 
-                <div class="list">
-                    <img src="./assets/img/publishing/kacution_mobile_03.png" alt="">
-                </div>
+          <div class="list">
+            <img src="./assets/img/publishing/sosangso_mobile_02.png" alt="" />
+          </div>
 
-            </div>
+          <div class="list">
+            <img src="./assets/img/publishing/sosangso_mobile_01.png" alt="" />
+          </div>
 
-            <div class="content">
-                <div class="date">2020.9.1 ~ 2021.6.1</div>
+          <div class="list">
+            <img src="./assets/img/publishing/sosangso_mobile_03.png" alt="" />
+          </div>
 
-                <div class="tit">
-                    <p><span>k auction</span> mobile page</p>
-                </div>
+          <div class="list">
+            <img src="./assets/img/publishing/sosangso_mobile_01.png" alt="" />
+          </div>
 
-                <div class="detail">리뉴얼 프로젝트이며 모바일 ui/ux를 새롭게 구성하였습니다.</div>
+          <div class="list">
+            <img src="./assets/img/publishing/sosangso_mobile_02.png" alt="" />
+          </div>
 
-                <div class="port_kill">
-                    <strong>skill</strong> 
-                    Html, Css, Javascript
-                </div>
-                <div class="port_color">
-                    <strong>color</strong>
-                     <ul>
-                        <li style="background-color: #061839;"></li>
-                        <li style="background-color: #F24F06;"></li>
-                        <li style="background-color: #eeeeee;"></li>
-                     </ul>
-                </div>
-
-                <div class="btn_wrap">
-                    <a href="https://www.k-auction.com/" class="cta" target="_blank">
-                        <span>detail page</span>
-                        <svg width="13px" height="10px" viewBox="0 0 13 10">
-                          <path d="M1,5 L11,5"></path>
-                          <polyline points="8 1 12 5 8 9"></polyline>
-                        </svg>
-                      </a>
-
-                </div>
-
- 
-            </div>
+          <div class="list">
+            <img src="./assets/img/publishing/sosangso_mobile_03.png" alt="" />
+          </div>
         </div>
 
+        <div class="content">
+          <div class="date">2021.12.1 ~ 2022.2.30</div>
 
-        <div class="port_mobile">
-            <div class="mockup_img">
-                <div class="list">
-                    <img src="./assets/img/publishing/sosangso_mobile_02.png" alt="">
-                </div>
+          <div class="tit">
+            <p><span>sosangso</span> mobile page</p>
+          </div>
 
-                <div class="list">
-                    <img src="./assets/img/publishing/sosangso_mobile_01.png" alt="">
-                </div>
+          <div class="detail">
+            소상소 모바일 어플리케이션 ui/ux 디자인과 퍼블리싱을 도맡아
+            하였습니다.
+          </div>
 
-                <div class="list">
-                    <img src="./assets/img/publishing/sosangso_mobile_03.png" alt="">
-                </div>
+          <div class="port_kill">
+            <strong>skill</strong>
+            Html, Css, Javascript
+          </div>
+          <div class="port_color">
+            <strong>color</strong>
+            <ul>
+              <li style="background-color: #f53a5c"></li>
+              <li style="background-color: #eb0d2f"></li>
+              <li style="background-color: #666666"></li>
+            </ul>
+          </div>
 
-                <div class="list">
-                    <img src="./assets/img/publishing/sosangso_mobile_02.png" alt="">
-                </div>
-
-                <div class="list">
-                    <img src="./assets/img/publishing/sosangso_mobile_01.png" alt="">
-                </div>
-
-                <div class="list">
-                    <img src="./assets/img/publishing/sosangso_mobile_03.png" alt="">
-                </div>
-
-                <div class="list">
-                    <img src="./assets/img/publishing/sosangso_mobile_02.png" alt="">
-                </div>
-
-                <div class="list">
-                    <img src="./assets/img/publishing/sosangso_mobile_01.png" alt="">
-                </div>
-
-                <div class="list">
-                    <img src="./assets/img/publishing/sosangso_mobile_03.png" alt="">
-                </div>
-
-                <div class="list">
-                    <img src="./assets/img/publishing/sosangso_mobile_01.png" alt="">
-                </div>
-
-                <div class="list">
-                    <img src="./assets/img/publishing/sosangso_mobile_02.png" alt="">
-                </div>
-
-                <div class="list">
-                    <img src="./assets/img/publishing/sosangso_mobile_03.png" alt="">
-                </div>
-
-            </div>
-
-            <div class="content">
-                <div class="date">2021.12.1 ~ 2022.2.30</div>
-
-                <div class="tit">
-                    <p><span>sosangso</span> mobile page</p>
-                </div>
-
-                <div class="detail">소상소 모바일 어플리케이션 ui/ux 디자인과 퍼블리싱을 도맡아 하였습니다. </div>
-
-                <div class="port_kill">
-                    <strong>skill</strong> 
-                    Html, Css, Javascript
-                </div>
-                <div class="port_color">
-                    <strong>color</strong>
-                     <ul>
-                         <li style="background-color: #F53A5C;"></li>
-                         <li style="background-color: #EB0D2F;"></li>
-                         <li style="background-color: #666666;"></li>
-                     </ul>
-                </div>
-
-                <div class="btn_wrap">
-                    <a href="https://www.figma.com/file/A3OkhK3uBrjP3ysYo7kavY/%EA%B3%A8%EB%AA%A9%EC%9E%A5%ED%84%B0?node-id=0%3A1" class="cta" target="_black">
-                        <span>detail page</span>
-                        <svg width="13px" height="10px" viewBox="0 0 13 10">
-                          <path d="M1,5 L11,5"></path>
-                          <polyline points="8 1 12 5 8 9"></polyline>
-                        </svg>
-                      </a>
-                </div>
- 
-            </div>
+          <div class="btn_wrap">
+            <a
+              href="https://www.figma.com/file/A3OkhK3uBrjP3ysYo7kavY/%EA%B3%A8%EB%AA%A9%EC%9E%A5%ED%84%B0?node-id=0%3A1"
+              class="cta"
+              target="_black"
+            >
+              <span>detail page</span>
+              <svg width="13px" height="10px" viewBox="0 0 13 10">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+              </svg>
+            </a>
+          </div>
         </div>
-
+      </div>
     </section>
-
 
     <section id="section5" class="section">
-        <div class="container">
-            <h1>Portfolio
-                <br>
-                (design)
-            </h1>
-            <p></p>
+      <div class="container">
+        <h1>
+          Portfolio
+          <br />
+          (design)
+        </h1>
+        <p></p>
 
+        <div class="design_port_wrap">
+          <div
+            class="modal_btn mouseCont reveal reveal-RTL"
+            data-header="상세페이지"
+            data-value="건강한 잡곡(제품) 상세페이지"
+            data-class="modalContent_01"
+            data-delay="300"
+          >
+            <img src="./assets/img/design/detail_page_02_thumb.jpg" alt="" />
+          </div>
 
-            <div class="design_port_wrap">
-                <div class="modal_btn mouseCont reveal reveal-RTL" data-header="상세페이지" data-value="건강한 잡곡(제품) 상세페이지" data-class="modalContent_01" data-delay="300">
-                    <img src="./assets/img/design/detail_page_02_thumb.jpg" alt="">
-                </div>
+          <div
+            class="modal_btn mouseCont reveal reveal-RTL"
+            data-header="상세페이지"
+            data-value="퍼스트두(제품) 상세페이지"
+            data-class="modalContent_02"
+            data-delay="300"
+          >
+            <img src="./assets/img/design/detail_page_03_thumb.jpg" alt="" />
+          </div>
 
-                <div class="modal_btn mouseCont reveal reveal-RTL" data-header="상세페이지" data-value="퍼스트두(제품) 상세페이지" data-class="modalContent_02" data-delay="300">
-                    <img src="./assets/img/design/detail_page_03_thumb.jpg" alt="">
-                </div>
+          <div
+            class="modal_btn mouseCont reveal reveal-RTL"
+            data-header="상세페이지"
+            data-value="페이셜 미스트기(제품) 상세페이지"
+            data-class="modalContent_03"
+            data-delay="300"
+          >
+            <img src="./assets/img/design/detail_page_04_thumb.jpg" alt="" />
+          </div>
 
-                <div class="modal_btn mouseCont reveal reveal-RTL" data-header="상세페이지" data-value="페이셜 미스트기(제품) 상세페이지" data-class="modalContent_03"
-                data-delay="300">
-                    <img src="./assets/img/design/detail_page_04_thumb.jpg" alt="">
-                </div>
+          <div
+            class="modal_btn mouseCont reveal reveal-RTL"
+            data-header="상세페이지"
+            data-value="페이셜 미스트기(제품) 상세페이지"
+            data-delay="300"
+            data-class="modalContent_04"
+          >
+            <img src="./assets/img/design/detail_page_05_thumb.jpg" alt="" />
+          </div>
 
-                <div class="modal_btn mouseCont reveal reveal-RTL" data-header="상세페이지" data-value="페이셜 미스트기(제품) 상세페이지" 
-                data-delay="300" data-class="modalContent_04">
-                    <img src="./assets/img/design/detail_page_05_thumb.jpg" alt="">
-                </div>
+          <div
+            class="modal_btn mouseCont reveal reveal-RTL"
+            data-header="상세페이지"
+            data-value="허브온팩(제품) 상세페이지"
+            data-delay="300"
+            data-class="modalContent_05"
+          >
+            <img src="./assets/img/design/detail_page_06_thumb.jpg" alt="" />
+          </div>
 
-                <div class="modal_btn mouseCont reveal reveal-RTL" data-header="상세페이지" data-value="허브온팩(제품) 상세페이지" 
-                data-delay="300" data-class="modalContent_05">
-                    <img src="./assets/img/design/detail_page_06_thumb.jpg" alt="">
-                </div>
+          <div
+            class="modal_btn mouseCont reveal reveal-RTL"
+            data-header="상세페이지"
+            data-value="에브리톡톡(제품) 상세페이지"
+            data-delay="300"
+            data-class="modalContent_06"
+          >
+            <img src="./assets/img/design/detail_page_09_thumb.jpg" alt="" />
+          </div>
 
+          <div
+            class="modal_btn mouseCont reveal reveal-RTL"
+            data-header="상세페이지"
+            data-value="미스 김부각(제품) 상세페이지"
+            data-delay="300"
+            data-class="modalContent_07"
+          >
+            <img src="./assets/img/design/detail_page_10_thumb.jpg" alt="" />
+          </div>
 
-                <div class="modal_btn mouseCont reveal reveal-RTL" data-header="상세페이지" data-value="에브리톡톡(제품) 상세페이지" 
-                data-delay="300"  data-class="modalContent_06">
-                    <img src="./assets/img/design/detail_page_09_thumb.jpg" alt="">
-                </div>
+          <div
+            class="modal_btn mouseCont reveal reveal-RTL"
+            data-header="상세페이지"
+            data-value="메디힐리(제품) 상세페이지"
+            data-delay="300"
+            data-class="modalContent_08"
+          >
+            <img src="./assets/img/design/detail_page_11_thumb.jpg" alt="" />
+          </div>
 
-                <div class="modal_btn mouseCont reveal reveal-RTL" data-header="상세페이지" data-value="미스 김부각(제품) 상세페이지" data-delay="300" data-class="modalContent_07">
-                    <img src="./assets/img/design/detail_page_10_thumb.jpg" alt="">
-                </div>
+          <div
+            class="modal_btn mouseCont reveal reveal-RTL"
+            data-header="상세페이지"
+            data-value="대구 동성로 막창(제품) 상세페이지"
+            data-delay="300"
+            data-class="modalContent_09"
+          >
+            <img src="./assets/img/design/detail_page_13_thumb.jpg" alt="" />
+          </div>
 
-                <div class="modal_btn mouseCont reveal reveal-RTL" data-header="상세페이지" data-value="메디힐리(제품) 상세페이지" data-delay="300" data-class="modalContent_08">
-                    <img src="./assets/img/design/detail_page_11_thumb.jpg" alt="">
-                </div>
+          <div
+            class="modal_btn mouseCont reveal reveal-RTL"
+            data-header="상세페이지"
+            data-value="튤립 닭봉구이(제품) 상세페이지"
+            data-delay="300"
+            data-class="modalContent_10"
+          >
+            <img src="./assets/img/design/detail_page_15_thumb.jpg" alt="" />
+          </div>
 
-                <div class="modal_btn mouseCont reveal reveal-RTL" data-header="상세페이지" data-value="대구 동성로 막창(제품) 상세페이지" data-delay="300" data-class="modalContent_09">
-                    <img src="./assets/img/design/detail_page_13_thumb.jpg" alt="">
-                </div>
+          <div
+            class="modal_btn mouseCont reveal reveal-RTL"
+            data-header="상세페이지"
+            data-value="노니주스(제품) 상세페이지"
+            data-delay="300"
+            data-class="modalContent_11"
+          >
+            <img src="./assets/img/design/detail_page_16_thumb.jpg" alt="" />
+          </div>
 
-                <div class="modal_btn mouseCont reveal reveal-RTL" data-header="상세페이지" data-value="튤립 닭봉구이(제품) 상세페이지" data-delay="300" data-class="modalContent_10">
-                    <img src="./assets/img/design/detail_page_15_thumb.jpg" alt="">
-                </div>
-
-                <div class="modal_btn mouseCont reveal reveal-RTL" data-header="상세페이지" data-value="노니주스(제품) 상세페이지" data-delay="300" data-class="modalContent_11">
-                    <img src="./assets/img/design/detail_page_16_thumb.jpg" alt="">
-                </div>
-
-                <div class="modal_btn mouseCont reveal reveal-RTL" data-header="상세페이지" data-value="s-커큐민(제품) 상세페이지" 
-                data-delay="300" data-class="modalContent_12">
-                    <img src="./assets/img/design/detail_page_17_thumb.jpg" alt="">
-                </div>
-
-
-            </div>
+          <div
+            class="modal_btn mouseCont reveal reveal-RTL"
+            data-header="상세페이지"
+            data-value="s-커큐민(제품) 상세페이지"
+            data-delay="300"
+            data-class="modalContent_12"
+          >
+            <img src="./assets/img/design/detail_page_17_thumb.jpg" alt="" />
+          </div>
         </div>
+      </div>
     </section>
-
 
     <section id="section6" class="section">
-        <div class="container">
-            <h1>JAVASCRIPT <br>EFFECT
-            </h1>
-            <p>JS를 활용한 여러가지 효과</p>
+      <div class="container">
+        <h1>JAVASCRIPT <br />EFFECT</h1>
+        <p>JS를 활용한 여러가지 효과</p>
 
-            <div class="swiper effectSwiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <img src="./assets/img/background/mouseEffect_01.png" alt="">
-                        <div class="slide_description">
+        <div class="swiper effectSwiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="./assets/img/background/mouseEffect_01.png" alt="" />
+              <div class="slide_description">
+                <h3>Mouse Effect</h3>
+                <p>javascript를 이용한 마우스 이펙트 효과</p>
 
-                            <h3>Mouse Effect</h3>
-                            <p>javascript를 이용한 마우스 이펙트 효과</p>
-
-                            <button onclick="window.open('./site/javascriptEffect/mouseEffect/mouseEffect01-javascript.html')" class="swipe_btn">View More</button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./assets/img/background/mouseEffect_02.png" alt="">
-                        <div class="slide_description">
-
-                            <h3>Mouse Effect</h3>
-                            <p>javascript를 이용한 마우스 이펙트 효과</p>
-
-                            <button onclick="window.open('./site/javascriptEffect/mouseEffect/mouseEffect02-javascript.html')" class="swipe_btn">View More</button>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="./assets/img/background/mouseEffect_03.png" alt="">
-                        <div class="slide_description">
-
-                            <h3>Mouse Effect</h3>
-                            <p>javascript를 이용한 마우스 이펙트 효과</p>
-
-                            <button onclick="window.open('./site/javascriptEffect/mouseEffect/mouseEffect03-javascript.html')" class="swipe_btn">View More</button>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="./assets/img/background/mouseEffect_04.png" alt="">
-                        <div class="slide_description">
-
-                            <h3>Mouse Effect</h3>
-                            <p>javascript를 이용한 마우스 이펙트 효과</p>
-
-                            <button onclick="window.open('./site/javascriptEffect/mouseEffect/mouseEffect04-javascript.html')" class="swipe_btn">View More</button>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="./assets/img/background/mouseEffect_05.png" alt="">
-                        <div class="slide_description">
-
-                            <h3>Mouse Effect</h3>
-                            <p>javascript를 이용한 마우스 이펙트 효과</p>
-
-                            <button onclick="window.open('./site/javascriptEffect/mouseEffect/mouseEffect05-javascript.html')" class="swipe_btn">View More</button>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="./assets/img/background/mouseEffect_06.png" alt="">
-                        <div class="slide_description">
-
-                            <h3>Mouse Effect</h3>
-                            <p>javascript를 이용한 마우스 이펙트 효과</p>
-
-                            <button onclick="window.open('./site/javascriptEffect/mouseEffect/mouseEffect06-javascript.html')" class="swipe_btn">View More</button>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="./assets/img/background/mouseEffect_07.png" alt="">
-                        <div class="slide_description">
-
-                            <h3>Mouse Effect</h3>
-                            <p>javascript를 이용한 마우스 이펙트 효과</p>
-
-                            <button onclick="window.open('./site/javascriptEffect/mouseEffect/mouseEffect07-javascript.html')" class="swipe_btn">View More</button>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="./assets/img/background/mouseEffect_08.png" alt="">
-                        <div class="slide_description">
-
-                            <h3>Mouse Effect</h3>
-                            <p>javascript를 이용한 마우스 이펙트 효과</p>
-
-                            <button onclick="window.open('./site/javascriptEffect/mouseEffect/mouseEffect08-javascript.html')" class="swipe_btn">View More</button>
-                        </div>
-                    </div>
-
-
-
-                    <!--페럴럭스효과-->
-                    <div class="swiper-slide">
-                        <img src="./assets/img/background/parallaxEffect_01.png" alt="">
-
-                        <div class="slide_description">
-
-                            <h3>Parallax Effect</h3>
-                            <p>javascript를 이용한 페럴럭스 효과</p>
-
-                            <button onclick="window.open('./site/javascriptEffect/parallaxEffect/parallaxEffect01-javascript.html')"  class="swipe_btn">View More</button>
-                        </div>
-                    </div>
-                    
-                    <div class="swiper-slide">
-                        <img src="./assets/img/background/parallaxEffect_02.png" alt="">
-
-                        <div class="slide_description">
-
-                            <h3>Parallax Effect</h3>
-                            <p>javascript를 이용한 페럴럭스 효과</p>
-
-                            <button onclick="window.open('./site/javascriptEffect/parallaxEffect/parallaxEffect02-javascript.html')"  class="swipe_btn">View More</button>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="./assets/img/background/parallaxEffect_03.png" alt="">
-
-                        <div class="slide_description">
-
-                            <h3>Parallax Effect</h3>
-                            <p>javascript를 이용한 페럴럭스 효과</p>
-
-                            <button onclick="window.open('./site/javascriptEffect/parallaxEffect/parallaxEffect03-javascript.html')"  class="swipe_btn">View More</button>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="./assets/img/background/parallaxEffect_04.png" alt="">
-
-                        <div class="slide_description">
-
-                            <h3>Parallax Effect</h3>
-                            <p>javascript를 이용한 페럴럭스 효과</p>
-
-                            <button onclick="window.open('./site/javascriptEffect/parallaxEffect/parallaxEffect04-javascript.html')"  class="swipe_btn">View More</button>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="./assets/img/background/parallaxEffect_05.png" alt="">
-
-                        <div class="slide_description">
-
-                            <h3>Parallax Effect</h3>
-                            <p>javascript를 이용한 페럴럭스 효과</p>
-
-                            <button onclick="window.open('./site/javascriptEffect/parallaxEffect/parallaxEffect05-javascript.html')"  class="swipe_btn">View More</button>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="./assets/img/background/parallaxEffect_06.png" alt="">
-
-                        <div class="slide_description">
-
-                            <h3>Parallax Effect</h3>
-                            <p>javascript를 이용한 페럴럭스 효과</p>
-
-                            <button onclick="window.open('./site/javascriptEffect/parallaxEffect/parallaxEffect06-javascript.html')"  class="swipe_btn">View More</button>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="./assets/img/background/parallaxEffect_07.png" alt="">
-
-                        <div class="slide_description">
-
-                            <h3>Parallax Effect</h3>
-                            <p>javascript를 이용한 페럴럭스 효과</p>
-
-                            <button onclick="window.open('./site/javascriptEffect/parallaxEffect/parallaxEffect07-javascript.html')"  class="swipe_btn">View More</button>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="./assets/img/background/parallaxEffect_08.png" alt="">
-
-                        <div class="slide_description">
-
-                            <h3>Parallax Effect</h3>
-                            <p>javascript를 이용한 페럴럭스 효과</p>
-
-                            <button onclick="window.open('./site/javascriptEffect/parallaxEffect/parallaxEffect08-javascript.html')"  class="swipe_btn">View More</button>
-                        </div>
-                    </div>
-
-
-                </div>
-
-
-
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
+                <button
+                  onclick="window.open('./site/javascriptEffect/mouseEffect/mouseEffect01-javascript.html')"
+                  class="swipe_btn"
+                >
+                  View More
+                </button>
+              </div>
             </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/background/mouseEffect_02.png" alt="" />
+              <div class="slide_description">
+                <h3>Mouse Effect</h3>
+                <p>javascript를 이용한 마우스 이펙트 효과</p>
+
+                <button
+                  onclick="window.open('./site/javascriptEffect/mouseEffect/mouseEffect02-javascript.html')"
+                  class="swipe_btn"
+                >
+                  View More
+                </button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./assets/img/background/mouseEffect_03.png" alt="" />
+              <div class="slide_description">
+                <h3>Mouse Effect</h3>
+                <p>javascript를 이용한 마우스 이펙트 효과</p>
+
+                <button
+                  onclick="window.open('./site/javascriptEffect/mouseEffect/mouseEffect03-javascript.html')"
+                  class="swipe_btn"
+                >
+                  View More
+                </button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./assets/img/background/mouseEffect_04.png" alt="" />
+              <div class="slide_description">
+                <h3>Mouse Effect</h3>
+                <p>javascript를 이용한 마우스 이펙트 효과</p>
+
+                <button
+                  onclick="window.open('./site/javascriptEffect/mouseEffect/mouseEffect04-javascript.html')"
+                  class="swipe_btn"
+                >
+                  View More
+                </button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./assets/img/background/mouseEffect_05.png" alt="" />
+              <div class="slide_description">
+                <h3>Mouse Effect</h3>
+                <p>javascript를 이용한 마우스 이펙트 효과</p>
+
+                <button
+                  onclick="window.open('./site/javascriptEffect/mouseEffect/mouseEffect05-javascript.html')"
+                  class="swipe_btn"
+                >
+                  View More
+                </button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./assets/img/background/mouseEffect_06.png" alt="" />
+              <div class="slide_description">
+                <h3>Mouse Effect</h3>
+                <p>javascript를 이용한 마우스 이펙트 효과</p>
+
+                <button
+                  onclick="window.open('./site/javascriptEffect/mouseEffect/mouseEffect06-javascript.html')"
+                  class="swipe_btn"
+                >
+                  View More
+                </button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./assets/img/background/mouseEffect_07.png" alt="" />
+              <div class="slide_description">
+                <h3>Mouse Effect</h3>
+                <p>javascript를 이용한 마우스 이펙트 효과</p>
+
+                <button
+                  onclick="window.open('./site/javascriptEffect/mouseEffect/mouseEffect07-javascript.html')"
+                  class="swipe_btn"
+                >
+                  View More
+                </button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./assets/img/background/mouseEffect_08.png" alt="" />
+              <div class="slide_description">
+                <h3>Mouse Effect</h3>
+                <p>javascript를 이용한 마우스 이펙트 효과</p>
+
+                <button
+                  onclick="window.open('./site/javascriptEffect/mouseEffect/mouseEffect08-javascript.html')"
+                  class="swipe_btn"
+                >
+                  View More
+                </button>
+              </div>
+            </div>
+
+            <!--페럴럭스효과-->
+            <div class="swiper-slide">
+              <img src="./assets/img/background/parallaxEffect_01.png" alt="" />
+
+              <div class="slide_description">
+                <h3>Parallax Effect</h3>
+                <p>javascript를 이용한 페럴럭스 효과</p>
+
+                <button
+                  onclick="window.open('./site/javascriptEffect/parallaxEffect/parallaxEffect01-javascript.html')"
+                  class="swipe_btn"
+                >
+                  View More
+                </button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./assets/img/background/parallaxEffect_02.png" alt="" />
+
+              <div class="slide_description">
+                <h3>Parallax Effect</h3>
+                <p>javascript를 이용한 페럴럭스 효과</p>
+
+                <button
+                  onclick="window.open('./site/javascriptEffect/parallaxEffect/parallaxEffect02-javascript.html')"
+                  class="swipe_btn"
+                >
+                  View More
+                </button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./assets/img/background/parallaxEffect_03.png" alt="" />
+
+              <div class="slide_description">
+                <h3>Parallax Effect</h3>
+                <p>javascript를 이용한 페럴럭스 효과</p>
+
+                <button
+                  onclick="window.open('./site/javascriptEffect/parallaxEffect/parallaxEffect03-javascript.html')"
+                  class="swipe_btn"
+                >
+                  View More
+                </button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./assets/img/background/parallaxEffect_04.png" alt="" />
+
+              <div class="slide_description">
+                <h3>Parallax Effect</h3>
+                <p>javascript를 이용한 페럴럭스 효과</p>
+
+                <button
+                  onclick="window.open('./site/javascriptEffect/parallaxEffect/parallaxEffect04-javascript.html')"
+                  class="swipe_btn"
+                >
+                  View More
+                </button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./assets/img/background/parallaxEffect_05.png" alt="" />
+
+              <div class="slide_description">
+                <h3>Parallax Effect</h3>
+                <p>javascript를 이용한 페럴럭스 효과</p>
+
+                <button
+                  onclick="window.open('./site/javascriptEffect/parallaxEffect/parallaxEffect05-javascript.html')"
+                  class="swipe_btn"
+                >
+                  View More
+                </button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./assets/img/background/parallaxEffect_06.png" alt="" />
+
+              <div class="slide_description">
+                <h3>Parallax Effect</h3>
+                <p>javascript를 이용한 페럴럭스 효과</p>
+
+                <button
+                  onclick="window.open('./site/javascriptEffect/parallaxEffect/parallaxEffect06-javascript.html')"
+                  class="swipe_btn"
+                >
+                  View More
+                </button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./assets/img/background/parallaxEffect_07.png" alt="" />
+
+              <div class="slide_description">
+                <h3>Parallax Effect</h3>
+                <p>javascript를 이용한 페럴럭스 효과</p>
+
+                <button
+                  onclick="window.open('./site/javascriptEffect/parallaxEffect/parallaxEffect07-javascript.html')"
+                  class="swipe_btn"
+                >
+                  View More
+                </button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./assets/img/background/parallaxEffect_08.png" alt="" />
+
+              <div class="slide_description">
+                <h3>Parallax Effect</h3>
+                <p>javascript를 이용한 페럴럭스 효과</p>
+
+                <button
+                  onclick="window.open('./site/javascriptEffect/parallaxEffect/parallaxEffect08-javascript.html')"
+                  class="swipe_btn"
+                >
+                  View More
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
-
-
-        
+      </div>
     </section>
 
-    <section id="section7" class="footer"> 
-        <div class="container">
-            <div class="tit">
-                <h1>contact me</h1>
+    <section id="section7" class="footer">
+      <div class="container">
+        <div class="tit">
+          <h1>contact me</h1>
+        </div>
+        <div class="footer_wrap">
+          <div class="info">
+            <div>
+              <p>Front End Development : Baek Eun Ji</p>
+              <p>PHONE : 010 3201 5631</p>
+              <p class="email">Email : qordmswl5631@naver.com</p>
             </div>
-            <div class="footer_wrap">
-                <div class="info">
-                    <div>
-                        <p>Front End Development : Baek Eun Ji</p>
-                        <p>PHONE : 010 2661 0497</p>
-                        <p class="email">Email : qordmswl5631@naver.com</p>
-                    </div>
-                </div>
-                
-                <div class="qrcode">
-                    <img src="./assets/img/qrcode.png" alt="">
-                </div>
-                
-            </div>
+          </div>
 
-            <div class="content">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Portfolio(web)</a></li>
-                    <li><a href="">Portfolio(mobile)</a></li>
-                    <li><a href="">Portfolio(design)</a></li>
-                    <li><a href="">Javascript Effect</a></li>
-                </ul>
-            </div>
+          <div class="qrcode">
+            <img src="./assets/img/qrcode.png" alt="" />
+          </div>
         </div>
 
-        <div class="modal">
-            <div class="modal_wrap">
-
-                <div class="modalContent modal01_cnt">
-                    <div class="modal_header">
-                        <span>상세페이지</span>
-                        <button class="modal_button cancel"><i class="fa-solid fa-xmark"></i></button>
-                    </div>
-                    <div class="sub_title">
-                        <span>건강한 잡곡 상세페이지</span>
-                    </div>
-                   
-                    <div class="modal_body">
-                        <img class="modalContent_01" src="./assets/img/design/detail_page_02.jpg" alt="">
-                        
-                        <img class="modalContent_02" src="./assets/img/design/detail_page_03.jpg" alt="">
-
-                        <img src="./assets/img/design/detail_page_04.jpg" alt="">
-
-                        <img src="./assets/img/design/detail_page_05.jpg" alt="">
-
-                        <img src="./assets/img/design/detail_page_06.jpg" alt="">
-
-                        <img src="./assets/img/design/detail_page_09.jpg" alt="">
-
-                        <img src="./assets/img/design/detail_page_10.jpg" alt="">
-
-                        <img src="./assets/img/design/detail_page_11.jpg" alt="">
-
-                        <img src="./assets/img/design/detail_page_13.jpg" alt="">
-
-                        <img src="./assets/img/design/detail_page_15.jpg" alt="">
-
-                        <img src="./assets/img/design/detail_page_16.jpg" alt="">
-
-                        <img src="./assets/img/design/detail_page_17.jpg" alt="">
-
-                    </div>
-                </div>
-
-                        
-            </div>    
+        <div class="content">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Portfolio(web)</a></li>
+            <li><a href="">Portfolio(mobile)</a></li>
+            <li><a href="">Portfolio(design)</a></li>
+            <li><a href="">Javascript Effect</a></li>
+          </ul>
         </div>
+      </div>
 
+      <div class="modal">
+        <div class="modal_wrap">
+          <div class="modalContent modal01_cnt">
+            <div class="modal_header">
+              <span>상세페이지</span>
+              <button class="modal_button cancel">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+            <div class="sub_title">
+              <span>건강한 잡곡 상세페이지</span>
+            </div>
+
+            <div class="modal_body">
+              <img
+                class="modalContent_01"
+                src="./assets/img/design/detail_page_02.jpg"
+                alt=""
+              />
+
+              <img
+                class="modalContent_02"
+                src="./assets/img/design/detail_page_03.jpg"
+                alt=""
+              />
+
+              <img src="./assets/img/design/detail_page_04.jpg" alt="" />
+
+              <img src="./assets/img/design/detail_page_05.jpg" alt="" />
+
+              <img src="./assets/img/design/detail_page_06.jpg" alt="" />
+
+              <img src="./assets/img/design/detail_page_09.jpg" alt="" />
+
+              <img src="./assets/img/design/detail_page_10.jpg" alt="" />
+
+              <img src="./assets/img/design/detail_page_11.jpg" alt="" />
+
+              <img src="./assets/img/design/detail_page_13.jpg" alt="" />
+
+              <img src="./assets/img/design/detail_page_15.jpg" alt="" />
+
+              <img src="./assets/img/design/detail_page_16.jpg" alt="" />
+
+              <img src="./assets/img/design/detail_page_17.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -1174,29 +1459,25 @@
     <script src="./assets/js/style.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.js"></script>
 
-
     <!-- 스크롤 위치 기억하여 뿌려주기 시작 -->
     <script language="javascript" for="plan6" event="onload">
-        //plan6이라는 frame이 onload될때 스크립트를 실행.  
-        var strCook = document.cookie;//저장된 쿠키 값을 받아온다.
-        if(strCook.indexOf("!~")!=0) {
+      //plan6이라는 frame이 onload될때 스크립트를 실행.
+      var strCook = document.cookie; //저장된 쿠키 값을 받아온다.
+      if (strCook.indexOf("!~") != 0) {
         var intS = strCook.indexOf("!~");
         var intE = strCook.indexOf("~!");
-        var strPos = strCook.substring(intS+2, intE);//스크롤 위치를 구한다.
-        document.body.scrollTop = strPos;//스크롤 위치를 적용시킨다.
-        }
-        document.plan6.resizeFrame(this);
+        var strPos = strCook.substring(intS + 2, intE); //스크롤 위치를 구한다.
+        document.body.scrollTop = strPos; //스크롤 위치를 적용시킨다.
+      }
+      document.plan6.resizeFrame(this);
     </script>
-    
+
     <!-- 스크롤 위치 쿠키에 저장 -->
-    <script type = "text/javascript">
-        function SetDivPosition(){
-            var intY = document.body.scrollTop;
-            document.cookie = "yPos=!~"+intY+"~!";
-        }
+    <script type="text/javascript">
+      function SetDivPosition() {
+        var intY = document.body.scrollTop;
+        document.cookie = "yPos=!~" + intY + "~!";
+      }
     </script>
-
-
-
-</body>
+  </body>
 </html>
